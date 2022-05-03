@@ -1,0 +1,138 @@
+body{
+    margin: auto;
+    padding: auto;
+    background-color: #07001a ;   
+     
+}
+
+#box0{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(255, 0, 0, 0);
+    z-index: 0;
+    
+}
+#box1{
+    position: absolute;
+    z-index: 1;    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 255, 0);
+    
+}
+.case{
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-top: -4px;    
+}
+
+#nums{ 
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    font-size: 18px;
+    text-align: center;
+}
+
+.numOff{
+    color: #7e0eff00;
+}
+
+.numNeutro{
+    color: #b16efd;
+    text-shadow:
+    0 0 1px #7e0eff,
+    0 0 2px #7e0eff,
+    0 0 3px #7e0eff,
+    0 0 4px #7e0eff,
+    0 0 5px #7e0eff,
+    0 0 6px #7e0eff,
+    0 0 7px #7e0eff,
+    0 0 8px #7e0eff;
+
+}
+.numBrilha{
+    color: #ffffff;
+    text-shadow:
+    0 0 1px #7e0eff,
+    0 0 2px #7e0eff,
+    0 0 3px #7e0eff,
+    0 0 4px #7e0eff,
+    0 0 5px #7e0eff,
+    0 0 6px #7e0eff,
+    0 0 7px #7e0eff,
+    0 0 8px #7e0eff;
+}
+
+#start0{
+    z-index: 3;
+    position: absolute;
+    width: 125px;
+    height: 50px;
+    background-color: #ff0088;
+    color: #ffffff;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-bottom: #ffffff;
+    border-radius: 10px;
+    border-style: double;
+    border: 10px;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 
+    0 0 1px #ff0088,
+    0 0 2px #ff0088,
+    0 0 3px #ff0088,
+    0 0 4px #ff0088,
+    0 0 5px #ff0088,
+    0 0 6px #ff0088,
+    0 0 7px #ff0088,
+    0 0 8px #ff0088;
+    
+    
+    
+}
+#start1{
+    position: absolute;
+    width: 125px;
+    height: 50px;
+    background-color: #ff0088;
+    color: #ffffff;
+    top: 0;
+    bottom: 0;
+    left: 1;
+    right: 0;
+    margin: auto;
+    border-bottom: #ffffff;
+    border-radius: 10px;
+    border-style: double;
+    border: 10px;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 
+    0 0 1px #ff0088,
+    0 0 2px #ff0088,
+    0 0 3px #ff0088,
+    0 0 4px #ff0088,
+    0 0 5px #ff0088,
+    0 0 6px #ff0088,
+    0 0 7px #ff0088,
+    0 0 8px #ff0088;
+    
+    
+}
+
+
+
+
