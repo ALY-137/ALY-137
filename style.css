@@ -1,8 +1,7 @@
 body{
     margin: auto;
     padding: auto;
-    background-color: #07001a ;   
-     
+    background-color: #07001a ;      
 }
 
 #box0{
@@ -13,9 +12,9 @@ body{
     right: 0;
     margin: auto;
     background-color: rgba(255, 0, 0, 0);
-    z-index: 0;
-    
+    z-index: 0; 
 }
+
 #box1{
     position: absolute;
     z-index: 1;    
@@ -24,9 +23,31 @@ body{
     left: 0;
     right: 0;
     margin: auto;
-    background-color: rgba(0, 0, 255, 0);
-    
+    background-color: rgba(0, 0, 255, 0);  
 }
+
+#box2{
+    position: absolute;
+    z-index: 3;    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 255, 0); 
+}
+
+#box3{
+    position: absolute;
+    z-index: 2;    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 255, 0); 
+}
+
 .case{
     height: 20px;
     width: 20px;
@@ -40,6 +61,8 @@ body{
     position: absolute;
     font-size: 18px;
     text-align: center;
+    font-family: 'Special Elite', cursive;
+    
 }
 
 .numOff{
@@ -47,20 +70,20 @@ body{
 }
 
 .numNeutro{
-    color: #b16efd;
+    color: #b16efd28;
     text-shadow:
-    0 0 1px #7e0eff,
-    0 0 2px #7e0eff,
-    0 0 3px #7e0eff,
-    0 0 4px #7e0eff,
-    0 0 5px #7e0eff,
-    0 0 6px #7e0eff,
-    0 0 7px #7e0eff,
-    0 0 8px #7e0eff;
-
+    0 0 1px #7e0eff5f,
+    0 0 2px #7e0eff5f,
+    0 0 3px #7e0eff5f,
+    0 0 4px #7e0eff5f,
+    0 0 5px #7e0eff5f,
+    0 0 6px #7e0eff5f,
+    0 0 7px #7e0eff5f,
+    0 0 8px #7e0eff5f;
+    
 }
 .numBrilha{
-    color: #ffffff;
+    color: #e8d4ff;
     text-shadow:
     0 0 1px #7e0eff,
     0 0 2px #7e0eff,
@@ -70,17 +93,29 @@ body{
     0 0 6px #7e0eff,
     0 0 7px #7e0eff,
     0 0 8px #7e0eff;
+}
+
+#Home{
+    position: absolute;
+    z-index: 4;    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #07001a; 
+    border: none;
 }
 
 #start0{
-    z-index: 3;
+    z-index: 11;
     position: absolute;
     width: 125px;
     height: 50px;
-    background-color: #ff0088;
+    background-color: #120044;
     color: #ffffff;
     top: 0;
-    bottom: 0;
+    bottom: -90px;
     left: 0;
     right: 0;
     margin: auto;
@@ -88,51 +123,86 @@ body{
     border-radius: 10px;
     border-style: double;
     border: 10px;
-    font-size: 40px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    font-family: 'Special Elite', cursive;
+    text-shadow: 
+    0 0 1px #7e0eff5f,
+    0 0 2px #7e0eff5f,
+    0 0 3px #7e0eff5f,
+    0 0 4px #7e0eff5f,
+    0 0 5px #7e0eff5f,
+    0 0 6px #7e0eff5f,
+    0 0 7px #7e0eff5f,
+    0 0 8px #7e0eff5f;;
     box-shadow: 
-    0 0 1px #ff0088,
-    0 0 2px #ff0088,
-    0 0 3px #ff0088,
-    0 0 4px #ff0088,
-    0 0 5px #ff0088,
-    0 0 6px #ff0088,
-    0 0 7px #ff0088,
-    0 0 8px #ff0088;
-    
-    
-    
+    0 0 1px #7e0eff5f,
+    0 0 2px #7e0eff5f,
+    0 0 3px #7e0eff5f,
+    0 0 4px #7e0eff5f,
+    0 0 5px #7e0eff5f,
+    0 0 6px #7e0eff5f,
+    0 0 7px #7e0eff5f,
+    0 0 8px #7e0eff5f;
 }
-#start1{
+
+#nome{
+    z-index: 10;
     position: absolute;
-    width: 125px;
-    height: 50px;
-    background-color: #ff0088;
-    color: #ffffff;
+    width: 250px;
+    height: 30px;
+    background-color: #120044;
+    color: #ffffff79;
     top: 0;
-    bottom: 0;
-    left: 1;
+    bottom: 150px;
+    left: 0;
     right: 0;
     margin: auto;
     border-bottom: #ffffff;
     border-radius: 10px;
     border-style: double;
     border: 10px;
-    font-size: 40px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    text-shadow:                                                                                                    
+    0 0 1px #7e0eff5f,
+    0 0 2px #7e0eff5f,
+    0 0 3px #7e0eff5f,
+    0 0 4px #7e0eff5f,
+    0 0 5px #7e0eff5f,
+    0 0 6px #7e0eff5f,
+    0 0 7px #7e0eff5f,
+    0 0 8px #7e0eff5f;;
     box-shadow: 
-    0 0 1px #ff0088,
-    0 0 2px #ff0088,
-    0 0 3px #ff0088,
-    0 0 4px #ff0088,
-    0 0 5px #ff0088,
-    0 0 6px #ff0088,
-    0 0 7px #ff0088,
-    0 0 8px #ff0088;
-    
-    
+    0 0 1px #7e0eff5f,
+    0 0 2px #7e0eff5f,
+    0 0 3px #7e0eff5f,
+    0 0 4px #7e0eff5f,
+    0 0 5px #7e0eff5f,
+    0 0 6px #7e0eff5f,
+    0 0 7px #7e0eff5f,
+    0 0 8px #7e0eff5f;
+    outline: 0;
+    accent-color: rgb(220, 0, 0);
 }
 
-
+#p0{
+    color: #7e0eff;
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    bottom: 90px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: 'Special Elite', cursive;
+    border: none;
+    border-style: none;
+    outline: 0;
+    background-color: #07001a ;    
+    font-size: 13px;
+    text-align: center;
+    text-decoration:underline;
+}
 
 
