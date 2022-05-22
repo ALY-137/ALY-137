@@ -43,7 +43,7 @@ boxMatrix3.style.width = `${boxLargura}px`;
 
 
 
-const caracteres = ["▲","♥","★","✦","♡"];
+const caracteres = ["▲","★","✦","♡"];
 const caracteres1 = ["兎"," ", 1, 3, 7,"A"," ","L","Y"];
 const caracteres2 = ["@","X","E","A","O","","✦","★"];
 //const caracteres = ["▗","▘","▙","▚","▛","▜","▝","▞","▟","■"];
@@ -57,10 +57,6 @@ const comprimento0 = [];
 for (var i = 0; i < numCol; i++) {
     comprimento0[i] = random(numLin * 2, numLin * 3);
 }
-
-
-
-
 
 criaMatrix0();
 criaMatrix2();
