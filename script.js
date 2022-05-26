@@ -156,7 +156,7 @@ for (var i = 0; i <= numCol; i++) {
 }
 
 const frase = ["B","O","A","S","-","V","I","N","D","A","S"];
-var numMens0 = frase.length;
+var numMensBV = frase.length;
 
 const mensagem0 = [];
 for(var i=0;i<numCol;i++){
@@ -164,13 +164,15 @@ for(var i=0;i<numCol;i++){
 }
 
 const sequencia = [];
+caiemV(sequencia,numMensBV)
 
-var ref = 0;
-for(var i= 0;i<numMens0;i++){
-    if(i==0){
-        sequencia[i]= aC;
+function caiemV(vetor,tamanho){
+    var ref = 0;
+    for(var i= 0;i<tamanho;i++){
+        if(i==0){
+        vetor[i]= aC;
 
-    }else{
+        }else{
         if(ref==0){
             aC= aC-i;
 
@@ -180,17 +182,24 @@ for(var i= 0;i<numMens0;i++){
 
             ref -= 1;
         }
-        sequencia[i]=aC;
+        vetor[i]=aC;
+        }
     }
-
 }
+//Organiza a sequencia para que as letras caem na forma de V.
 
-var posj2 = [];
-for(var i=0;i<numMens0;i++){
-        posj2[i]= sequencia[i];
-}
 
-var comeco  = sequencia[numMens0-2];
+
+var comeco ;
+
+if(numMensBV%2==0){
+    comeco = sequencia[numMensBV-1];
+}else{
+    comeco = sequencia[numMensBV-2];
+};
+
+//Identifica a posição em que a frase deve começar para ficar centralizada.
+
 var cont=0;
 for( var i =0 ;i<numCol;i++){
     if(i<comeco){
@@ -201,9 +210,13 @@ for( var i =0 ;i<numCol;i++){
     };
 }
 
+
+
+
+
 const comprimento2 = [];
-for (var i = 0; i < numMens0; i++) {
-    comprimento2[i] = random(numLin/2,numLin );
+for (var i = 0; i < numMensBV; i++) {
+    comprimento2[i] = random((numLin/2)+1,numLin );
 }
 
 var numLin2;
@@ -343,7 +356,15 @@ for(var i=0;i<numNome;i++){
         posj3[i]= sequencia1[i];
 }
 
-var comeco1  = sequencia1[numNome-2];
+var comeco1 ;
+
+if(numNome%2==0){
+    comeco1 = sequencia1[numNome-1];
+}else{
+    comeco1 = sequencia1[numNome-2];
+};
+
+
 var cont1=0;
 for( var i =0 ;i<numCol;i++){
     if(i<comeco1){
@@ -355,7 +376,7 @@ for( var i =0 ;i<numCol;i++){
 }
 
 for (var i = 0; i < numNome; i++) {
-    comprimento3[i] = random(numLin/2 , numLin );
+    comprimento3[i] = random((numLin/2)+1 , numLin );
 }
      
     var some = document.getElementById('Home');
@@ -458,25 +479,25 @@ async function anima2() {
         }
     }
    
-    for (var j = 0; j < numMens0; j++) {
+    for (var j = 0; j < numMensBV; j++) {
 
         espera = await wait(1500 / (j + 2));
 
         if (aLi2[j] == 0) {
-            matrix[aLi2[j]][posj2[j]][2].setAttribute('class', 'numBrilha');
-            matrix[aLi2[j]][posj2[j]][2].innerHTML = `${caracteres1[random(0, caracteres1.length)]}`;
+            matrix[aLi2[j]][sequencia[j]][2].setAttribute('class', 'numBrilha');
+            matrix[aLi2[j]][sequencia[j]][2].innerHTML = `${caracteres1[random(0, caracteres1.length)]}`;
         } else {
             if (aLi2[j] < numLin2 && aLf2[j] == 0) {
-                matrix[aLi2[j] - 1][posj2[j]][2].setAttribute('class', 'numNeutro');
-                matrix[aLi2[j] - 1][posj2[j]][2].innerHTML = `${caracteres[random(0, caracteres.length)]}`;
+                matrix[aLi2[j] - 1][sequencia[j]][2].setAttribute('class', 'numNeutro');
+                matrix[aLi2[j] - 1][sequencia[j]][2].innerHTML = `${caracteres[random(0, caracteres.length)]}`;
 
                 if (temporizadorI2[j] > numLin2   && aLf2[j] == 0) {
-                    matrix[aLi2[j]][posj2[j]][2].setAttribute('class', 'numNeutro');
-                    matrix[aLi2[j]][posj2[j]][2].innerHTML = `${caracteres[random(0, caracteres.length)]}`;
+                    matrix[aLi2[j]][sequencia[j]][2].setAttribute('class', 'numNeutro');
+                    matrix[aLi2[j]][sequencia[j]][2].innerHTML = `${caracteres[random(0, caracteres.length)]}`;
 
                 } else {
-                    matrix[aLi2[j]][posj2[j]][2].setAttribute('class', 'numBrilha');
-                    matrix[aLi2[j]][posj2[j]][2].innerHTML = `${mensagem0[posj2[j]]}`;
+                    matrix[aLi2[j]][sequencia[j]][2].setAttribute('class', 'numBrilha');
+                    matrix[aLi2[j]][sequencia[j]][2].innerHTML = `${mensagem0[sequencia[j]]}`;
                 }
             }
         }
@@ -489,13 +510,12 @@ async function anima2() {
 
         if (temporizadorI2[j] >= comprimento2[j] && aLf2[j] < numLin2-1) {
 
-            matrix[aLf2[j]][posj2[j]][2].setAttribute('class', 'numOff');
+            matrix[aLf2[j]][sequencia[j]][2].setAttribute('class', 'numOff');
 
             temporizadorF2[j] += 1;
 
             if (temporizadorF2[j] > numLin * 5) {
-                clearInterval(tempAnima2);
-               
+                clearInterval(tempAnima2);   
             }
 
             if (temporizadorF2[j] < numLin2 -1) {
@@ -527,11 +547,9 @@ function start2() {
 async function anima3() {
     for (var a = 0; a < numLin3 -1 ; a++) {
         for (var b = 0; b < numCol; b++) {
-            
-                if (b % 2 == 0) {
-                    matrix[a][b][3].innerHTML = `${caracteres[random(0, caracteres.length)]}`;
-                }
-            
+            if (b % 2 == 0) {
+                matrix[a][b][3].innerHTML = `${caracteres[random(0, caracteres.length)]}`;
+            }  
         }
     }
    
@@ -594,4 +612,6 @@ function start3() {
         temporizadorF3[i] = 0;
     }
     tempAnima3 = setInterval(async () => await anima3(), 80);
+    
+  
 }
