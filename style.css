@@ -4,6 +4,17 @@ body{
     background-color: #07001a ;      
 }
 
+#Matrix{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(255, 0, 0, 0);
+    z-index: 0;   
+}
+
 #box0{
     position: absolute;
     top: 0;
@@ -12,12 +23,12 @@ body{
     right: 0;
     margin: auto;
     background-color: rgba(255, 0, 0, 0);
-    z-index: 0; 
+    z-index: 1; 
 }
 
 #box1{
     position: absolute;
-    z-index: 1;    
+    z-index: 2;    
     top: 0;
     bottom: 0;
     left: 0;
@@ -28,7 +39,7 @@ body{
 
 #box2{
     position: absolute;
-    z-index: 3;    
+    z-index: 4;    
     top: 0;
     bottom: 0;
     left: 0;
@@ -39,7 +50,7 @@ body{
 
 #box3{
     position: absolute;
-    z-index: 2;    
+    z-index: 3;    
     top: 0;
     bottom: 0;
     left: 0;
@@ -105,6 +116,7 @@ body{
     margin: auto;
     background-color: #07001a; 
     border: none;
+    display: none;
 }
 
 #start0{
@@ -183,7 +195,7 @@ body{
     0 0 7px #7e0eff5f,
     0 0 8px #7e0eff5f;
     outline: 0;
-    
+ 
 }
 
 
