@@ -1,7 +1,7 @@
 <p align="center">✧</p>
 <p align="center">◃──────  𝙿𝙴𝚁𝙵𝙸𝙻  ──────▹</p>
 
-<p align="center">Desenvolvimento Front-end / Designer</p>
+<p align="center">Desenvolvimento Front-end / Design</p>
 <p align="center">savannapassarela@gmail.com</p>
 
 
