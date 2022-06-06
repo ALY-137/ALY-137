@@ -1,3 +1,4 @@
+<p align="center"><img src="https://user-images.githubusercontent.com/57689838/172229931-b5fe24bc-7f48-43db-bee8-c3e26e2381b5.gif" ></p>
 <p align="center">✧</p>
 <p align="center">◃──────  𝙿𝙴𝚁𝙵𝙸𝙻  ──────▹</p>
 
