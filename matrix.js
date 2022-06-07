@@ -388,6 +388,10 @@ function enviaNome(){
                 var some = document.getElementById('Home');
                 some.style.display = "none";
 
+                var some = document.getElementById('Escolha');
+                some.style.display = "block";
+
+
             }
 
         }
@@ -659,7 +663,8 @@ function abreLink(){
 }
 
 function pilulaAzul(){
-     show();
+    var some = document.getElementById('pR');
+    some.style.display = "none";
 }
 
 function pilulaVermelha(){
