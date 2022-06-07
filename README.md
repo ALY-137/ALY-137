@@ -46,5 +46,5 @@ VS CODE | PHOTOSHOP | ILLUSTRATOR |INDESIGN | GITHUB |
 </br>
 <p align="center">"<i>A vida, ás vezes, pode te forçar a programar um Call Center."</i></p>
 <p align="center">SAVANNA PASSARELA</p>
-<p align="center">└─────────────────────┘</p>
+<p align="center">└────────────────────┘</p>
 <p align="center">▚</p>
