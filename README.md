@@ -19,7 +19,7 @@ JAVASCRIPT | C | HTML |CSS | VISUAL BASIC | JAVA
 :---------: | :------: | :-------:| :-------:|:-------:| :-------:|
 ▓▓▓▓▓▓▓▓▓ 95%| ▓▓▓▓▓▓▓▓ 85% | ▓▓▓▓▓▓▓▓▓ 95% | ▓▓▓▓▓▓▓▓▓ 95% | ▓▓▓▓▓▓ 60% | ▓▓▓▓▓▓ 50%
 
-<p align="center">└──────────────────────┘</p>
+<p align="center">└─────────────────────┘</p>
 </br>
 </br>
 
@@ -31,7 +31,7 @@ VS CODE | PHOTOSHOP | ILLUSTRATOR |INDESIGN | GITHUB |
 :---------: | :------: | :-------:| :-------:|:-------:|
 ▓▓▓▓▓▓▓▓▓ 95%| ▓▓▓▓▓▓▓▓▓ 95% | ▓▓▓▓▓▓▓▓▓ 95% | ▓▓▓▓▓▓▓▓ 80% | ▓▓▓▓▓▓▓▓ 80% |
 
-<p align="center">└───────────────────────┘</p>
+<p align="center">└─────────────────────┘</p>
 </br>
 </br>
 
@@ -43,5 +43,5 @@ VS CODE | PHOTOSHOP | ILLUSTRATOR |INDESIGN | GITHUB |
 </br>
 <p align="center">"<i>A vida, ás vezes, pode te forçar a programar um Call Center."</i></p>
 <p align="center">SAVANNA PASSARELA</p>
-<p align="center">└─────────────────────┘</p>
+<p align="center">└────────────────────┘</p>
 <p align="center">✧</p>
