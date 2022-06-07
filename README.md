@@ -1,5 +1,6 @@
 <p align="center"><img src="https://user-images.githubusercontent.com/57689838/172229931-b5fe24bc-7f48-43db-bee8-c3e26e2381b5.gif" ></p>
-<p align="center">✧</p>
+<p align="center">▚</p>
+</br>
 <p align="center">┌──────  𝙿𝙴𝚁𝙵𝙸𝙻  ──────┐</p>
 
 <p align="center">Desenvolvimento Front-end / Design</p>
@@ -10,6 +11,8 @@
 
 <p align="center">└──────────────────┘</p>
 </br>
+
+<p align="center">▞</p>
 </br>
 
 <p align="center">┌──────  𝙻𝙸𝙽𝙶𝚄𝙰𝙶𝙴𝙽𝚂  ──────┐</p>
@@ -21,6 +24,8 @@ JAVASCRIPT | C | HTML |CSS | VISUAL BASIC | JAVA
 
 <p align="center">└────────────────────┘</p>
 </br>
+
+<p align="center">▚</p>
 </br>
 
 
@@ -33,6 +38,8 @@ VS CODE | PHOTOSHOP | ILLUSTRATOR |INDESIGN | GITHUB |
 
 <p align="center">└────────────────────┘</p>
 </br>
+
+<p align="center">▞</p>
 </br>
 
 <p align="center">┌──────  𝙱𝙸𝙾𝙶𝚁𝙰𝙵𝙸𝙰  ──────┐</p>
@@ -44,4 +51,4 @@ VS CODE | PHOTOSHOP | ILLUSTRATOR |INDESIGN | GITHUB |
 <p align="center">"<i>A vida, ás vezes, pode te forçar a programar um Call Center."</i></p>
 <p align="center">SAVANNA PASSARELA</p>
 <p align="center">└────────────────────┘</p>
-<p align="center">✧</p>
+<p align="center">▚</p>
