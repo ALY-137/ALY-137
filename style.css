@@ -107,7 +107,7 @@ body{
 
 #Home{
     position: absolute;
-    z-index: 4;    
+    z-index: 6;    
     top: 0;
     bottom: 0;
     left: 0;
@@ -121,12 +121,12 @@ body{
 #start0{
     z-index: 11;
     position: absolute;
-    width: 125px;
+    width: 50px;
     height: 50px;
-    background-color: #120044;
+    background-color: #b50057;
     color: #ffffff;
     top: 0;
-    bottom: -90px;
+    bottom: -30px;
     left: 0;
     right: 0;
     margin: auto;
@@ -137,23 +137,23 @@ body{
     font-size: 30px;
     font-family: 'Special Elite', cursive;
     text-shadow: 
-    0 0 1px #7e0eff5f,
-    0 0 2px #7e0eff5f,
-    0 0 3px #7e0eff5f,
-    0 0 4px #7e0eff5f,
-    0 0 5px #7e0eff5f,
-    0 0 6px #7e0eff5f,
-    0 0 7px #7e0eff5f,
-    0 0 8px #7e0eff5f;;
+    0 0 1px #ff007b79,
+    0 0 2px #ff007b79,
+    0 0 3px #ff007b79,
+    0 0 4px #ff007b79,
+    0 0 5px #ff007b79,
+    0 0 6px #ff007b79,
+    0 0 7px #ff007b79,
+    0 0 8px #ff007b79;;
     box-shadow: 
-    0 0 1px #7e0eff5f,
-    0 0 2px #7e0eff5f,
-    0 0 3px #7e0eff5f,
-    0 0 4px #7e0eff5f,
-    0 0 5px #7e0eff5f,
-    0 0 6px #7e0eff5f,
-    0 0 7px #7e0eff5f,
-    0 0 8px #7e0eff5f;
+    0 0 1px #ffffff51,
+    0 0 2px #ffffff51,
+    0 0 3px #ffffff51,
+    0 0 4px #ffffff51,
+    0 0 5px #ffffff51,
+    0 0 6px #ffffff51,
+    0 0 7px #ffffff51,
+    0 0 8px #ffffff51;
 }
 
 #nome{
@@ -162,9 +162,9 @@ body{
     width: 250px;
     height: 30px;
     background-color: #120044;
-    color: #ffffff79;
+    color: #ffffff4e;
     top: 0;
-    bottom: 150px;
+    bottom: 100px;
     left: 0;
     right: 0;
     margin: auto;
@@ -172,7 +172,7 @@ body{
     border-radius: 10px;
     border-style: double;
     border: 10px;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     font-family: 'Special Elite', cursive;
     text-shadow:                                                                                                    
@@ -217,4 +217,40 @@ body{
     text-decoration:underline;
 }
 
+#Escolha{
+    position: absolute;
+    z-index: 5;    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #07001a; 
+    border: none;
+    display: none;
+    
+}
 
+#pilulas{
+    height: 80px;
+    width: 160px;
+    background-color: #07001a;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    
+}
+
+
+#pB{
+    height: 80px;
+    width: 80px; 
+}
+#pR{
+    position: absolute;
+    height: 80px;
+    width: 80px; 
+}

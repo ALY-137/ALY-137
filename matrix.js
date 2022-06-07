@@ -2,7 +2,7 @@
 //A ANIMAÇÃO É BASEADA NA ABERTURA DO FILME THE MATRIX.
 //PARA A BASE DA ANIMAÇÃO O PROGRAMA CONSTROI UMA MATRIZ TRIDIMENSIONAL, QUE GERA LINHAS, COLUNAS E AS CHUVAS.
 
-//DEV:  ALY-137
+//DEV:   ALY-137 
 
 const largura = window.innerWidth;
 const altura = window.innerHeight;
@@ -320,69 +320,90 @@ async function anima0() {
 
 };
 
-
-function start0() {
-
+function enviaNome(){ 
+    
     var recebeNome = document.getElementById('nome');
     nome = recebeNome.value;
     numNome = recebeNome.value.length;
     MensBVNome = nome.split('');
 
-for(var i=0;i<numCol;i++){
-    mensagem1[i]= i;
-}
-
-for(var i= 0;i<numNome;i++){
-    if(i==0){
-        sequenciaemV1[i]= meio1;
-
-    }else{
-        if(ref1==0){
-            meio1= meio1-i;
-
-            ref1 += 1;
-        }else{
-            meio1= meio1+i;
-
-            ref1 -= 1;
+        for(var i=0;i<numCol;i++){
+            mensagem1[i]= i;
         }
-        sequenciaemV1[i]=meio1;
-    }
+
+        for(var i= 0;i<numNome;i++){
+            if(i==0){
+                sequenciaemV1[i]= meio1;
+
+            }else{
+                if(ref1==0){
+                    meio1= meio1-i;
+
+                    ref1 += 1;
+                }else{
+                    meio1= meio1+i;
+
+                    ref1 -= 1;
+                }
+                sequenciaemV1[i]=meio1;
+            }
+
+        }
+
+
+        for(var i=0;i<numNome;i++){
+                posj3[i]= sequenciaemV1[i];
+        }
+
+        var comeco1 ;
+
+        if(numNome%2==0){
+            comeco1 = sequenciaemV1[numNome-1];
+        }else{
+            comeco1 = sequenciaemV1[numNome-2];
+        };
+
+
+        var cont1=0;
+        for( var i =0 ;i<numCol;i++){
+            if(i<comeco1){
+                mensagem1[i]=0;
+            }else{
+                mensagem1[i]=MensBVNome[cont1];
+                cont1 +=1;
+            };
+        }
+
+        for (var i = 0; i < numNome; i++) {
+            comprimento3[i] = random((numLin/2)+1 , numLin );
+        }
+
+        if(nome == ''){
+            alert('Erro! Você precisa mesmo me dizer o seu nome.');
+        }else{
+           if(numNome >= 10 ){
+               alert('Erro! Informe apenas um nome.');
+            }else{
+
+                var some = document.getElementById('Home');
+                some.style.display = "none";
+
+                var some = document.getElementById('Escolha');
+                some.style.display = "block";
+
+
+            }
+
+        }
+
+        
+
+
 
 }
 
 
-for(var i=0;i<numNome;i++){
-        posj3[i]= sequenciaemV1[i];
-}
-
-var comeco1 ;
-
-if(numNome%2==0){
-    comeco1 = sequenciaemV1[numNome-1];
-}else{
-    comeco1 = sequenciaemV1[numNome-2];
-};
-
-
-var cont1=0;
-for( var i =0 ;i<numCol;i++){
-    if(i<comeco1){
-        mensagem1[i]=0;
-    }else{
-        mensagem1[i]=MensBVNome[cont1];
-        cont1 +=1;
-    };
-}
-
-for (var i = 0; i < numNome; i++) {
-    comprimento3[i] = random((numLin/2)+1 , numLin );
-}
-     
-    var some = document.getElementById('Home');
-    some.style.display = "none";
-
-
+function start0() {
 
     for (var i = 0; i <= numCol; i++) {
         aLi0[i] = 0;
@@ -542,7 +563,7 @@ function start2() {
 }
 
 
-
+var conta = 0;
 
 
 async function anima3() {
@@ -602,7 +623,12 @@ async function anima3() {
                 var some = document.getElementById('chuva2');
                 some.style.display = "none";
 
-                abreLink();
+                 conta = conta+1;
+                 if(conta==1){
+                     abreLink();
+                 }
+
+               
              
             }
 
@@ -620,7 +646,6 @@ async function anima3() {
 
 };
 
-
 function start3() {
     for (var i = 0; i <= numCol; i++) {
         aLi3[i] = 0;
@@ -633,5 +658,17 @@ function start3() {
   
 }
 function abreLink(){
-	window.open('https://github.com/ALY-137/');
+	window.location.href ='https://github.com/ALY-137/';
+    
+}
+
+function pilulaAzul(){
+    var some = document.getElementById('pR');
+    some.style.display = "none";
+}
+
+function pilulaVermelha(){
+    start0();
+    var some = document.getElementById('Escolha');
+                some.style.display = "none";
 }
