@@ -8,14 +8,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Aly</title>
+    <title>ALY-137</title>
 </head>
 <body onload="show()">  
     <div id="Home">
-        <input required placeholder="ALY-137" onfocus="this.value='';" type="text" value="SEU NOME CYBER SOCIAL" id="nome">
-        <input disabled="disabled" type="text" id="p0" value="Não possui um NCS? Peça para ALY criar um por ti.">
-        <input type="button" value="ENTRAR" id="start0" onclick="start0()">
+        <input required placeholder="ME DIGA O SEU NOME" onfocus="this.value='';" type="text" value="" id="nome">
+        <input type="button" value="兎" id="start0" onclick="enviaNome()">
     </div>
+
+    <div id="Escolha">
+        <div id="pilulas">
+            <img src="pB.png" id="pB" onclick="pilulaAzul()">
+            <img src="pR.png" id="pR" onclick="pilulaVermelha()">
+        </div>
+        
+
+    </div>
+    
     <div id="Matrix"></div>
     
     <script src="matrix.js"></script>
