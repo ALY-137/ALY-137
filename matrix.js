@@ -12,6 +12,11 @@ var numLin = Math.trunc((altura) / 20);
 var numCol = Math.trunc((largura) / 20);
 //Essas variáveis foram criadas a fim de obter o número de colunas e linhas da matrix dividindo o valor das dimensões de tela com o valor em pixels dos caracteres que irão percorrer a matrix.
 
+if(numCol>35){
+    numCol = 35;
+}
+//Limita número de colunas.
+
 if(numCol%2==0){
     numCol = numCol -1;
 }
