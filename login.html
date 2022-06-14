@@ -24,7 +24,11 @@
         window.onload = function () {
           google.accounts.id.initialize({
             client_id: "169860730801-il1d2oj9rpqkemoqspqdd1l72kvu4nrk.apps.googleusercontent.com",
-            callback: handleCredentialResponse
+            callback: handleCredentialResponse,
+            context:"signin",
+            ux_mode:"redirect",
+            login_uri:"www.aly-137.com",
+            auto_prompt:"false"
           });
           google.accounts.id.renderButton(
             document.getElementById("buttonDiv"),
