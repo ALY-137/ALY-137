@@ -7,9 +7,6 @@
 <p align="center">Front End Developer ║ Web Designer</p>
 <p align="center">savannapassarela@gmail.com</p>
 
-
-
-
 <p align="center">└──────────────────┘</p>
 </br>
 <p align="center">▞</p>

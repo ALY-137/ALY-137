@@ -73,8 +73,6 @@ for (var i = 0; i < numCol; i++) {
 }
 //Esse array determina o comprimento de uma coluna de chuva variando aleatóriamente.
 
-
-
 desenhaMatrix();
 
 function desenhaMatrix() {
@@ -377,7 +375,7 @@ function enviaNome(){
         for (var i = 0; i < numNome; i++) {
             comprimento3[i] = random((numLin/2)+1 , numLin );
         }
-
+                
         if(nome == ''){
             alert('Erro! Você precisa mesmo me dizer o seu nome.');
         }else{
