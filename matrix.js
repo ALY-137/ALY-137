@@ -325,7 +325,7 @@ async function anima0() {
 
 function enviaNome(){ 
     
-    var recebeNome = document.getElementById('given_name');
+    var recebeNome = document.getElementById('nome');
     nome = recebeNome.value;
     numNome = recebeNome.value.length;
     MensBVNome = nome.split('');
@@ -398,10 +398,6 @@ function enviaNome(){
             }
 
         }
-
-        
-
-
 
 }
 
@@ -600,9 +596,7 @@ async function anima3() {
                     matrix[aLi3[j]][posj3[j]][3].innerHTML = `${mensagem1[posj3[j]]}`;
                 }
             }
-        }
-
-       
+        }  
 
         temporizadorI3[j] += 1;
 
@@ -641,10 +635,6 @@ async function anima3() {
 
         }
 
-        
-            
-        
-
     }
 
 };
@@ -656,13 +646,11 @@ function start3() {
         temporizadorI3[i] = 0;
         temporizadorF3[i] = 0;
     }
-    tempAnima3 = setInterval(async () => await anima3(), 80);
-    
-  
+    tempAnima3 = setInterval(async () => await anima3(), 80);  
 }
+
 function abreLink(){
-	window.location.href ='https://github.com/ALY-137/';
-    
+	window.location.href ='https://github.com/ALY-137/';  
 }
 
 function pilulaAzul(){
@@ -673,31 +661,5 @@ function pilulaAzul(){
 function pilulaVermelha(){
     start0();
     var some = document.getElementById('Escolha');
-                some.style.display = "none";
-}
-
-function handleCredentialResponse(response) {
-    const data = jwt_decode(response.credential)
-
-    fullName.textContent = data.name
-    sub.textContent = data.sub
-    given_name.textContent = data.given_name
-    family_name.textContent = data.family_name
-    email.textContent = data.email
-    verifiedEmail.textContent = data.email_verified
-    picture.setAttribute("src", data.picture);
-   
-    
-}
-window.onload = function () {
-  google.accounts.id.initialize({
-    client_id: "169860730801-il1d2oj9rpqkemoqspqdd1l72kvu4nrk.apps.googleusercontent.com",
-    callback: handleCredentialResponse
-  });
-  google.accounts.id.renderButton(
-    document.getElementById('buttonDiv'),
-    { theme: "outline", 
-      size: "large" }  // customization attributes
-  );
-  google.accounts.id.prompt(); // also display the One Tap dialog
+    some.style.display = "none";
 }
