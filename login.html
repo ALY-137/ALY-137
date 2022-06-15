@@ -7,8 +7,9 @@
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
     <script>
+        const data = 0;
         function handleCredentialResponse(response) {
-        const data = jwt_decode(response.credential)
+        data =jwt_decode(response.credential)
 
         fullName.textContent = data.name
         sub.textContent = data.sub
@@ -17,8 +18,8 @@
         email.textContent = data.email
         verifiedEmail.textContent = data.email_verified
         picture.setAttribute("src", data.picture)
-        console.log(given_name)
-    }
+       
+    } console.log(data.given_name)
     window.onload = function () {
       google.accounts.id.initialize({
         client_id: "169860730801-il1d2oj9rpqkemoqspqdd1l72kvu4nrk.apps.googleusercontent.com",
@@ -43,7 +44,7 @@
     <p id="email"></p>
     <p id="verifiedEmail"></p>
     <img id="picture" />
-    <p>4</p>
+    <p>5</p>
     
 </body>
 </html>
