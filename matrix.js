@@ -325,7 +325,7 @@ async function anima0() {
 
 function enviaNome(){ 
     
-    var recebeNome = document.getElementById('given_name');
+    var recebeNome = document.getElementById('nome');
     nome = recebeNome.value;
     numNome = recebeNome.value.length;
     MensBVNome = nome.split('');
