@@ -3,4 +3,3 @@ function show(){
     show.style.display = "block";
 }
 //Essa função faz mostrar a Home.
-
