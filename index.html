@@ -23,6 +23,8 @@
         email.textContent = data.email
         verifiedEmail.textContent = data.email_verified
         picture.setAttribute("src", data.picture)
+
+        console.log(given_name);
     }
     window.onload = function () {
       google.accounts.id.initialize({
