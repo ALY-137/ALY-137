@@ -17,7 +17,7 @@
         email.textContent = data.email
         verifiedEmail.textContent = data.email_verified
         picture.setAttribute("src", data.picture)
-        console.log(given_name)
+        console.log(data.given_name)
     }
     window.onload = function () {
       google.accounts.id.initialize({
@@ -43,7 +43,7 @@
     <p id="email"></p>
     <p id="verifiedEmail"></p>
     <img id="picture" />
-    <p>1</p>
+    <p>2</p>
     
 </body>
 </html>
