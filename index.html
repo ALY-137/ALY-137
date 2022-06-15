@@ -10,39 +10,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
 
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
-    <script>
-        function handleCredentialResponse(response) {
-        const data = jwt_decode(response.credential)
-
-        fullName.textContent = data.name
-        sub.textContent = data.sub
-        given_name.textContent = data.given_name
-        family_name.textContent = data.family_name
-        email.textContent = data.email
-        verifiedEmail.textContent = data.email_verified
-        picture.setAttribute("src", data.picture)
-
-        console.log(given_name);
-    }
-    window.onload = function () {
-      google.accounts.id.initialize({
-        client_id: "169860730801-il1d2oj9rpqkemoqspqdd1l72kvu4nrk.apps.googleusercontent.com",
-        callback: handleCredentialResponse
-      });
-      google.accounts.id.renderButton(
-        document.getElementById("buttonDiv"),
-        { theme: "outline", 
-          size: "large" }  // customization attributes
-      );
-      google.accounts.id.prompt(); // also display the One Tap dialog
-    }
-    </script>
+    
     
     
     <title>ALY-137</title>
-    
+     
 </head>
 <body>
     
@@ -50,14 +22,7 @@
         <input required placeholder="ME DIGA O SEU NOME" onfocus="this.value='';" type="text" value="" id="nome">
         <input type="button" value="兎" id="start0" onclick="enviaNome()"> 
         
-            <div id="buttonDiv"></div>            
-            <p id="fullName"></p>
-            <p id="sub"></p>
-            <p id="given_name"></p>
-            <p id="family_name"></p>
-            <p id="email"></p>
-            <p id="verifiedEmail"></p>
-            <img id="picture" />
+         
             
         
             
