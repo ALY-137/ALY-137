@@ -8,7 +8,8 @@
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
 
-    <script> 
+    <script>
+
     function handleCredentialResponse(response) {
     const data = jwt_decode(response.credential)
 
@@ -20,7 +21,7 @@
     verifiedEmail.textContent = data.email_verified
     picture.setAttribute("src", data.picture);
     }
-
+    
     window.onload = function () {
     google.accounts.id.initialize({
     client_id: "169860730801-il1d2oj9rpqkemoqspqdd1l72kvu4nrk.apps.googleusercontent.com",
@@ -33,8 +34,6 @@
     );
     google.accounts.id.prompt(); // also display the One Tap dialog
     }
-
-
     </script>
    
     <title>Document</title>
@@ -48,7 +47,7 @@
     <p id="email"></p>
     <p id="verifiedEmail"></p>
     <img id="picture" />
-    <p>9</p>
+    <p>10</p>
     
 </body>
 

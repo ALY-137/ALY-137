@@ -323,6 +323,7 @@ async function anima0() {
 
 };
 
+
 function enviaNome(){ 
     
     var recebeNome = document.getElementById('nome');
@@ -663,3 +664,7 @@ function pilulaVermelha(){
     var some = document.getElementById('Escolha');
     some.style.display = "none";
 }
+
+import cracra from 'login.html';
+
+console.log(cracra);
