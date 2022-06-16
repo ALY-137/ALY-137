@@ -323,15 +323,15 @@ async function anima0() {
 
 };
 
-import { nomeGoogle2 } from "./login.js";
+import { nomeGoogle2 } from "./login";
 
 function enviaNome(){ 
 
     
     
-    var recebeNome = nomeGoogle2;
-    nome = recebeNome.value;
-    numNome = recebeNome.value.length;
+    
+    nome = nomeGoogle2;
+    numNome = nome.length;
     MensBVNome = nome.split('');
 
         for(var i=0;i<numCol;i++){
