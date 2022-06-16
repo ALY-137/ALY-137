@@ -1,3 +1,5 @@
+const nome = 0;
+
 function handleCredentialResponse(response) {
     const data = jwt_decode(response.credential)
 
@@ -8,6 +10,7 @@ function handleCredentialResponse(response) {
     email.textContent = data.email
     verifiedEmail.textContent = data.email_verified
     picture.setAttribute("src", data.picture)
+    nome = data.given_name;
   }
   window.onload = function () {
     google.accounts.id.initialize({
@@ -20,3 +23,5 @@ function handleCredentialResponse(response) {
     );
     google.accounts.id.prompt(); // also display the One Tap dialog
   }
+
+  console.log(nome);
