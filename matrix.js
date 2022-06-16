@@ -323,10 +323,13 @@ async function anima0() {
 
 };
 
+import { nomeGoogle } from "./login.js";
 
 function enviaNome(){ 
+
     
-    var recebeNome = document.getElementById('nome');
+    
+    var recebeNome = nomeGoogle;
     nome = recebeNome.value;
     numNome = recebeNome.value.length;
     MensBVNome = nome.split('');
