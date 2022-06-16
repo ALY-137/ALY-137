@@ -625,9 +625,7 @@ async function anima3() {
                  if(conta==1){
                      abreLink();
                  }
-
-               
-             
+  
             }
 
             if (temporizadorF3[j] < numLin3 -1) {
