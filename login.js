@@ -1,4 +1,3 @@
-export const nomeGoogle2 = 'nome';
 
 function handleCredentialResponse(response) {
     const data = jwt_decode(response.credential)
@@ -11,7 +10,6 @@ function handleCredentialResponse(response) {
     verifiedEmail.textContent = data.email_verified
     picture.setAttribute("src", data.picture)
 
-    nomeGoogle2 = data.given_name;
   }
   window.onload = function () {
     google.accounts.id.initialize({
