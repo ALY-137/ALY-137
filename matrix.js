@@ -665,6 +665,3 @@ function pilulaVermelha(){
     some.style.display = "none";
 }
 
-import cracra from 'login.html';
-
-console.log(cracra);
