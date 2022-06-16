@@ -1,4 +1,4 @@
-export const nomeGoogle = 0;
+export const nomeGoogle = 'nome';
 
 function handleCredentialResponse(response) {
     const data = jwt_decode(response.credential)
