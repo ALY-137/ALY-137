@@ -664,4 +664,3 @@ function pilulaVermelha(){
     var some = document.getElementById('Escolha');
     some.style.display = "none";
 }
-
