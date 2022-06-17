@@ -3,26 +3,21 @@
 //PARA A BASE DA ANIMAÇÃO O PROGRAMA CONSTROI UMA MATRIZ TRIDIMENSIONAL, QUE GERA LINHAS, COLUNAS E AS CHUVAS.
 
 //DEV:  ALY-137
-
 const largura = window.innerWidth;
 const altura = window.innerHeight;
 //Essas variáveis foram criadas para obter os valores em pixels das dimensões de tela qual o usuário está utilizando.
 
-var numLin = Math.trunc((altura) / 20);
+
+const caracteres = ["▲","★","✦","♡"];
+//const caracteres = ["▗","▘","▙","▚","▛","▜","▝","▞","▟","■"];
+const caracteres1 = ["兎"," ", 1, 3, 7,"A"," ","L","Y"];
+//Esses são os arrays com os pacotes de caracteres que serão usados na matrix.
+
+const random = (min, max) => Math.floor(Math.random() * (max - min) + min);
+//Essa é uma função que gera números aleatórios com parâmetro de um número mínimo e máximo.
+
+var numLin = 0;
 var numCol = Math.trunc((largura) / 20);
-//Essas variáveis foram criadas a fim de obter o número de colunas e linhas da matrix dividindo o valor das dimensões de tela com o valor em pixels dos caracteres que irão percorrer a matrix.
-
-if(numCol>15){
-    numCol = 15;
-}
-
-numLin = 10;
-//Limita número de colunas.
-
-if(numCol%2==0){
-    numCol = numCol -1;
-}
-//A fim de obter uma centralização perfeita para a frase de BOAS-VINDAS, nessa condição o número de colunas passa a ser impar caso for par.
 
 const Case = [];
 //Essa variável armazena a div da div que armazena o caractere. 
@@ -30,7 +25,141 @@ const matrix = [];
 //Essa variável armazena a div que armazena o caractere.
 
 const chuvas =[];
-criachuvas();
+
+var chuvaAltura = 0;
+var chuvaLargura = 0;
+
+const comprimento0 = [];
+
+var tempAnima0;
+var nome;
+var numNome;
+var MensBVNome = [];
+const mensagem1 = [];
+const sequenciaemV1 = [];
+var ref1 = 0;
+var posj3 = [];
+
+const comprimento3 = [];
+var tempAnima3;
+var tempAnima2;
+var tempAnima1;
+var prox1 = 0;
+
+var numLin3;
+
+var meio =  0;
+var meio1 = 0;
+
+var sequenciaemVChuva0 = [];
+
+var guarda = sequenciaemVChuva0[0];
+//Essa variável guarda o valor da primeira posição da sequencia.
+
+const MensBV = ["B","O","A","S","-","V","I","N","D","A","S"];
+var numMensBV = MensBV.length;
+
+const mensagem0 = [];
+
+const sequenciaemV = [];
+
+var comeco ;
+
+var numLin2;
+
+var cont=0;
+
+const comprimento2 = [];
+
+
+var aLi0 = [];
+var aLi1 = [];
+var aLi2 = [];
+var aLi3 = [];
+
+var aLf0 = [];
+var aLf1 = [];
+var aLf2 = [];
+var aLf3 = [];
+
+var temporizadorI0 = [];
+var temporizadorI1 = [];
+var temporizadorI2 = [];
+var temporizadorI3 = [];
+
+var temporizadorF0 = [];
+var temporizadorF1 = [];
+var temporizadorF2 = [];
+var temporizadorF3 = [];
+
+function pilulaAzul(){
+    numLin = 10;
+    
+    if(numCol>19){
+        numCol = 19;
+    }
+
+    //Limita número de linhas e colunas.
+    
+    criachuvas();
+    redimenChuvas();
+    comprimentoCols0();
+    comprimentoCols2();
+    desenhaMatrix();
+    linhaMeio2();
+    linhaMeio3();
+    colunasMeio();
+    enviaNome();
+    criaSequenciaemV();
+    sequenciaemVChuva0.sort(randOrd);
+//Aleatoriza a sequência.
+    idPosMeio();
+    construVetMens();
+    caiemV(sequenciaemV,numMensBV);
+    comecoMBV();
+    preencheZeros();
+      
+    start0();
+    var some = document.getElementById('Escolha');
+    some.style.display = "none";
+}
+
+function pilulaVermelha(){
+    
+
+    numLin = Math.trunc((altura) / 20);
+    
+//Essas variáveis foram criadas a fim de obter o número de colunas e linhas da matrix dividindo o valor das dimensões de tela com o valor em pixels dos caracteres que irão percorrer a matrix.
+
+    if(numCol%2==0){
+    numCol = numCol -1;
+    }
+//A fim de obter uma centralização perfeita para a frase de BOAS-VINDAS, nessa condição o número de colunas passa a ser impar caso for par.
+    
+    criachuvas();
+    redimenChuvas();
+    comprimentoCols0();
+    comprimentoCols2();
+    desenhaMatrix();
+    linhaMeio2();
+    linhaMeio3();
+    colunasMeio();
+    enviaNome();
+    criaSequenciaemV();
+    sequenciaemVChuva0.sort(randOrd);
+//Aleatoriza a sequência.
+    idPosMeio();
+    construVetMens();
+    caiemV(sequenciaemV,numMensBV);
+    comecoMBV();
+    preencheZeros();
+    
+    
+    start0();
+    var some = document.getElementById('Escolha');
+    some.style.display = "none";
+}
+
 function criachuvas(){
     for(var i=0;i<4;i++){
         chuvas[i] = document.createElement("div");
@@ -40,9 +169,9 @@ function criachuvas(){
 }
 //Essas divs são criadas para armazenar separamente cada sessão de chuva da animação da matrix.
 
-
-var chuvaAltura = numLin * 20;
-var chuvaLargura = numCol * 20;
+function redimenChuvas(){
+chuvaAltura = numLin * 20;
+chuvaLargura = numCol * 20;
 
 var chuvamatrix = document.getElementById('Matrix');
 chuvamatrix.style.height = `${chuvaAltura}px`;
@@ -63,24 +192,16 @@ chuvamatrix.style.width = `${chuvaLargura}px`;
 var chuvamatrix = document.getElementById('chuva3');
 chuvamatrix.style.height = `${chuvaAltura}px`;
 chuvamatrix.style.width = `${chuvaLargura}px`;
+}
 //Essas variáveis tem a finalidade de definir e atribuir as dimensões exatas da div que irá armazenar a matrix.
 
-
-const caracteres = ["▲","★","✦","♡"];
-//const caracteres = ["▗","▘","▙","▚","▛","▜","▝","▞","▟","■"];
-const caracteres1 = ["兎"," ", 1, 3, 7,"A"," ","L","Y"];
-//Esses são os arrays com os pacotes de caracteres que serão usados na matrix.
-
-const random = (min, max) => Math.floor(Math.random() * (max - min) + min);
-//Essa é uma função que gera números aleatórios com parâmetro de um número mínimo e máximo.
-
-const comprimento0 = [];
-for (var i = 0; i < numCol; i++) {
-    comprimento0[i] = random(numLin+1, numLin + numLin/2);
+function comprimentoCols0(){
+    for (var i = 0; i < numCol; i++) {
+        comprimento0[i] = random(numLin+1, numLin + numLin/2);
+    }    
 }
 //Esse array determina o comprimento de uma coluna de chuva variando aleatóriamente.
 
-desenhaMatrix();
 
 function desenhaMatrix() {
     for (var i = 0; i < numLin; i++) {
@@ -116,64 +237,54 @@ function desenhaMatrix() {
 
 
 
-var tempAnima0;
-var nome;
-var numNome;
-var MensBVNome = [];
-const mensagem1 = [];
-const sequenciaemV1 = [];
-var ref1 = 0;
-var posj3 = [];
+function linhaMeio3(){
+    numLin3 = Math.floor(numLin/2 +1);
+}
 
-var numLin3;
-numLin3=Math.floor(numLin/2 +1);
-
-const comprimento3 = [];
-var tempAnima3;
-var tempAnima2;
-var tempAnima1;
-var prox1 = 0;
-
-
-var meio =  Math.trunc(numCol / 2);
-var meio1 = meio;
+function colunasMeio(){
+    meio =  Math.trunc(numCol / 2);
+    meio1 = meio;
+}
 //Essas variável tem o objetivo de identificar o caractere que fica no meio de uma linha. 
+
+
+
+function criaSequenciaemV(){
+    for (var i = 0; i <= numCol - 1; i++) {
+    sequenciaemVChuva0[i] = i;
+}
+}
+//Esse for define os valores do array que refere a sequencia do primeiro ciclo da chuva.
+
+
 
 function randOrd() {
     return (Math.round(Math.random()) - 0.5);
 }
 //Essa função troca de posição os valores de um vetor aleatóriamente.
 
-var sequenciaemVChuva0 = [];
-for (var i = 0; i <= numCol - 1; i++) {
-    sequenciaemVChuva0[i] = i;
-}
-//Esse for define os valores do array que refere a sequencia do primeiro ciclo da chuva.
 
-sequenciaemVChuva0.sort(randOrd);
-//Aleatoriza a sequência.
 
-var guarda = sequenciaemVChuva0[0];
-//Essa variável guarda o valor da primeira posição da sequencia.
 
+function idPosMeio(){
 for (var i = 0; i <= numCol; i++) {
     if (sequenciaemVChuva0[i] == meio) {
         sequenciaemVChuva0[i] = guarda;
         sequenciaemVChuva0[0] = meio;
     }
 }
-//Esse for percorre o vetor da sequência e quando identifica a posição do meio troca o seu valor pelo valor da primeira posição.
 
-const MensBV = ["B","O","A","S","-","V","I","N","D","A","S"];
-var numMensBV = MensBV.length;
-
-const mensagem0 = [];
-for(var i=0;i<numCol;i++){
-    mensagem0[i]= i;
 }
 
-const sequenciaemV = [];
-caiemV(sequenciaemV,numMensBV)
+//Esse for percorre o vetor da sequência e quando identifica a posição do meio troca o seu valor pelo valor da primeira posição.
+
+
+
+function construVetMens(){
+    for(var i=0;i<numCol;i++){
+    mensagem0[i]= i;
+}
+}
 
 function caiemV(vetor,tamanho){
     var ref = 0;
@@ -199,18 +310,20 @@ function caiemV(vetor,tamanho){
 
 
 
-var comeco ;
 
-if(numMensBV%2==0){
+function comecoMBV(){
+    if(numMensBV%2==0){
     comeco = sequenciaemV[numMensBV-1];
 }else{
     comeco = sequenciaemV[numMensBV-2];
 };
+}
+
 
 //Identifica a posição em que a MensBV deve começar para ficar centralizada.
 
-var cont=0;
-for( var i =0 ;i<numCol;i++){
+function preencheZeros(){
+    for( var i =0 ;i<numCol;i++){
     if(i<comeco){
         mensagem0[i]=0;
     }else{
@@ -218,39 +331,29 @@ for( var i =0 ;i<numCol;i++){
         cont +=1;
     };
 }
+}
+
 //Esse for preenche com zeros as posições que antecedem a posição que foi identificada como a de início da frase.
 
 
 
 
-const comprimento2 = [];
-for (var i = 0; i < numMensBV; i++) {
+function comprimentoCols2(){
+    for (var i = 0; i < numMensBV; i++) {
     comprimento2[i] = random((numLin/2)+1,numLin );
 }
-
-var numLin2;
-numLin2=Math.floor(numLin/2);
+}
 
 
-var aLi0 = [];
-var aLi1 = [];
-var aLi2 = [];
-var aLi3 = [];
+function linhaMeio2(){
+    numLin2=Math.floor(numLin/2);
+}
 
-var aLf0 = [];
-var aLf1 = [];
-var aLf2 = [];
-var aLf3 = [];
 
-var temporizadorI0 = [];
-var temporizadorI1 = [];
-var temporizadorI2 = [];
-var temporizadorI3 = [];
 
-var temporizadorF0 = [];
-var temporizadorF1 = [];
-var temporizadorF2 = [];
-var temporizadorF3 = [];
+
+
+
 
 const wait = ms => new Promise(resolve => setInterval(resolve, ms));
 let espera = null;
@@ -328,12 +431,11 @@ async function anima0() {
 
 function enviaNome(){ 
     
-    
-    var recebeNome = document.getElementById('nome');
-    nome = recebeNome.value;
+    nome = 'SAVANNA';
     numNome = nome.length;
     MensBVNome = nome.split('');
     console.log(nome)
+    console.log(numNome)
 
         for(var i=0;i<numCol;i++){
             mensagem1[i]= i;
@@ -386,23 +488,6 @@ function enviaNome(){
             comprimento3[i] = random((numLin/2)+1 , numLin );
         }
                 
-        if(nome == ''){
-            alert('Erro! Você precisa mesmo me dizer o seu nome.');
-        }else{
-           if(numNome >= 10 ){
-               alert('Erro! Informe apenas um nome.');
-            }else{
-
-                var some = document.getElementById('Home');
-                some.style.display = "none";
-
-                var some = document.getElementById('Escolha');
-                some.style.display = "block";
-
-
-            }
-
-        }
 
 }
 
@@ -656,14 +741,4 @@ function abreLink(){
 	window.location.href ='https://github.com/ALY-137/';  
 }
 
-function pilulaAzul(){
-    var some = document.getElementById('pR');
-    some.style.display = "none";
-}
-
-function pilulaVermelha(){
-    start0();
-    var some = document.getElementById('Escolha');
-    some.style.display = "none";
-}
 

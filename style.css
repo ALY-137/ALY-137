@@ -91,7 +91,7 @@ body{
     0 0 6px #7e0eff5f,
     0 0 7px #7e0eff5f,
     0 0 8px #7e0eff5f;
-    
+
 }
 .numBrilha{
     color: #e8d4ff;
@@ -116,7 +116,7 @@ body{
     margin: auto;
     background-color: #07001a; 
     border: none;
-    display: block;
+    display: none;
 }
 
 #start0{
@@ -228,7 +228,7 @@ body{
     margin: auto;
     background-color: #07001a; 
     border: none;
-    display: none;
+    display: block;
     
 }
 
