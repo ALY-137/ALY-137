@@ -7,7 +7,6 @@ const largura = window.innerWidth;
 const altura = window.innerHeight;
 //Essas variáveis foram criadas para obter os valores em pixels das dimensões de tela qual o usuário está utilizando.
 
-
 const caracteres = ["▲","★","✦","♡"];
 //const caracteres = ["▗","▘","▙","▚","▛","▜","▝","▞","▟","■"];
 const caracteres1 = ["兎"," ", 1, 3, 7,"A"," ","L","Y"];
@@ -63,14 +62,13 @@ const mensagem0 = [];
 
 const sequenciaemV = [];
 
-var comeco ;
+var comeco;
 
 var numLin2;
 
 var cont=0;
 
 const comprimento2 = [];
-
 
 var aLi0 = [];
 var aLi1 = [];
@@ -149,7 +147,6 @@ function pilulaVermelha(){
     caiemV(sequenciaemV,numMensBV);
     comecoMBV();
     preencheZeros();
-    
     
     start0();
     var some = document.getElementById('Escolha');
@@ -404,7 +401,6 @@ async function anima0() {
             temporizadorF0[j] += 1;
             if (temporizadorF0[j] > numLin * 3) {
                 clearInterval(tempAnima0);
-                
             }
 
             if (temporizadorF0[j] < numLin) {

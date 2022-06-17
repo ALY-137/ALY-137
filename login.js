@@ -8,7 +8,6 @@
     email.textContent = data.email
     verifiedEmail.textContent = data.email_verified
     picture.setAttribute("src", data.picture)
-
   }
   window.onload = function () {
     google.accounts.id.initialize({
