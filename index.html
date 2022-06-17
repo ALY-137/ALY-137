@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+    
     <script src="login.js"></script>
     <script src="matrix.js"></script>
 
@@ -20,6 +23,15 @@
     <div id="Home">
         <input required placeholder="ME DIGA O SEU NOME" onfocus="this.value='';" type="text" value="" id="nome">
         <input type="button" value="兎" id="start0" onclick="enviaNome()"> 
+        <div id="buttonDiv"></div>     
+    <p id="fullName"></p>
+    <p id="sub"></p>
+    <p id="given_name"></p>
+    <p id="family_name"></p>
+    <p id="email"></p>
+    <p id="verifiedEmail"></p>
+    <img id="picture" />
+    <p>33</p>
         
     </div>
 
