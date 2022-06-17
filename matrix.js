@@ -98,9 +98,7 @@ function pilulaAzul(){
     if(numCol>19){
         numCol = 19;
     }
-
     //Limita número de linhas e colunas.
-    
     criachuvas();
     redimenChuvas();
     comprimentoCols0();
@@ -125,8 +123,6 @@ function pilulaAzul(){
 }
 
 function pilulaVermelha(){
-    
-
     numLin = Math.trunc((altura) / 20);
     
 //Essas variáveis foram criadas a fim de obter o número de colunas e linhas da matrix dividindo o valor das dimensões de tela com o valor em pixels dos caracteres que irão percorrer a matrix.
