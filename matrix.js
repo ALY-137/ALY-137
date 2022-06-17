@@ -12,9 +12,11 @@ var numLin = Math.trunc((altura) / 20);
 var numCol = Math.trunc((largura) / 20);
 //Essas variáveis foram criadas a fim de obter o número de colunas e linhas da matrix dividindo o valor das dimensões de tela com o valor em pixels dos caracteres que irão percorrer a matrix.
 
-if(numCol>35){
-    numCol = 35;
+if(numCol>15){
+    numCol = 15;
 }
+
+numLin = 10;
 //Limita número de colunas.
 
 if(numCol%2==0){
@@ -327,9 +329,9 @@ async function anima0() {
 function enviaNome(){ 
     
     
-    var recebeNome = document.getElementById('given_name');
+    var recebeNome = document.getElementById('nome');
     nome = recebeNome.value;
-    numNome = recebeNome.value.length;
+    numNome = nome.length;
     MensBVNome = nome.split('');
     console.log(nome)
 
