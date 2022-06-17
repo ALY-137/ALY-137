@@ -197,8 +197,6 @@ body{
     outline: 0;
 }
 
-
-
 #p0{
     color: #7e0eff;
     z-index: 9;
@@ -229,7 +227,6 @@ body{
     background-color: #07001a; 
     border: none;
     display: block;
-    
 }
 
 #pilulas{
@@ -241,16 +238,15 @@ body{
     left: 0;
     right: 0;
     margin: auto;
-    position: absolute;
-    
+    position: absolute;  
 }
-
 
 #pB{
     height: 80px;
     width: 80px; 
     position: absolute;
 }
+
 #pR{
     height: 80px;
     width: 80px; 

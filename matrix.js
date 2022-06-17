@@ -125,12 +125,12 @@ function pilulaAzul(){
 function pilulaVermelha(){
     numLin = Math.trunc((altura) / 20);
     
-//Essas variáveis foram criadas a fim de obter o número de colunas e linhas da matrix dividindo o valor das dimensões de tela com o valor em pixels dos caracteres que irão percorrer a matrix.
+    //Essas variáveis foram criadas a fim de obter o número de colunas e linhas da matrix dividindo o valor das dimensões de tela com o valor em pixels dos caracteres que irão percorrer a matrix.
 
     if(numCol%2==0){
     numCol = numCol -1;
     }
-//A fim de obter uma centralização perfeita para a frase de BOAS-VINDAS, nessa condição o número de colunas passa a ser impar caso for par.
+    //A fim de obter uma centralização perfeita para a frase de BOAS-VINDAS, nessa condição o número de colunas passa a ser impar caso for par.
     
     criachuvas();
     redimenChuvas();
@@ -143,7 +143,7 @@ function pilulaVermelha(){
     enviaNome();
     criaSequenciaemV();
     sequenciaemVChuva0.sort(randOrd);
-//Aleatoriza a sequência.
+    //Aleatoriza a sequência.
     idPosMeio();
     construVetMens();
     caiemV(sequenciaemV,numMensBV);
@@ -320,13 +320,13 @@ function comecoMBV(){
 
 function preencheZeros(){
     for( var i =0 ;i<numCol;i++){
-    if(i<comeco){
+        if(i<comeco){
         mensagem0[i]=0;
-    }else{
+        }else{
         mensagem0[i]=MensBV[cont];
         cont +=1;
-    };
-}
+        };
+    }
 }
 
 //Esse for preenche com zeros as posições que antecedem a posição que foi identificada como a de início da frase.
@@ -335,21 +335,14 @@ function preencheZeros(){
 
 
 function comprimentoCols2(){
-    for (var i = 0; i < numMensBV; i++) {
+    for (var i = 0; i < numMensBV; i++){
     comprimento2[i] = random((numLin/2)+1,numLin );
+    }
 }
-}
-
 
 function linhaMeio2(){
     numLin2=Math.floor(numLin/2);
 }
-
-
-
-
-
-
 
 const wait = ms => new Promise(resolve => setInterval(resolve, ms));
 let espera = null;
@@ -366,7 +359,6 @@ function trocador(d) {
         }
     }
 }
-
 
 async function anima0() {
     trocador(matrix);
