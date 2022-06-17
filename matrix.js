@@ -327,10 +327,11 @@ async function anima0() {
 function enviaNome(){ 
     
     
-    var recebeNome = document.getElementById('nome');
+    var recebeNome = document.getElementById('given_name');
     nome = recebeNome.value;
     numNome = recebeNome.value.length;
     MensBVNome = nome.split('');
+    console.log(nome)
 
         for(var i=0;i<numCol;i++){
             mensagem1[i]= i;
