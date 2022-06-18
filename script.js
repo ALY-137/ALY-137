@@ -1,6 +1,6 @@
 function verifica(){
     var verificacao = document.getElementById('verifiedEmail');
-    verificacao = verificacao.textContent;
+    verificacao = verificacao.value;
     console.log(verificacao);
     
     if(verificacao=="true"){
