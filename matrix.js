@@ -24,12 +24,9 @@ const matrix = [];
 //Essa variável armazena a div que armazena o caractere.
 
 const chuvas =[];
-
 var chuvaAltura = 0;
 var chuvaLargura = 0;
-
 const comprimento0 = [];
-
 var tempAnima0;
 var nome;
 var numNome;
@@ -38,36 +35,25 @@ const mensagem1 = [];
 const sequenciaemV1 = [];
 var ref1 = 0;
 var posj3 = [];
-
 const comprimento3 = [];
 var tempAnima3;
 var tempAnima2;
 var tempAnima1;
 var prox1 = 0;
-
 var numLin3;
-
 var meio =  0;
 var meio1 = 0;
-
 var sequenciaemVChuva0 = [];
-
 var guarda = 0;
-//Essa variável guarda o valor da primeira posição da sequencia.
+//Essa variável guarda o valor da primeira posição da sequência.
 
 const MensBV = ["B","O","A","S","-","V","I","N","D","A","S"];
 var numMensBV = MensBV.length;
-
 const mensagem0 = [];
-
 const sequenciaemV = [];
-
 var comeco;
-
 var numLin2;
-
 var cont=0;
-
 const comprimento2 = [];
 
 var aLi0 = [];
@@ -94,7 +80,6 @@ const wait = ms => new Promise(resolve => setInterval(resolve, ms));
 let espera = null;
 var prox0 = 0;
 
-
 function pilulaAzul(){
     numLin = 10;
     
@@ -117,7 +102,6 @@ function pilulaVermelha(){
     
     TheMatrix();
 }
-
 
 function TheMatrix(){
     criachuvas(); // Essas divs são criadas para armazenar separamente cada sessão de chuva da animação da matrix.
@@ -181,7 +165,6 @@ function comprimentoCols0(){
     }    
 }
 
-
 function desenhaMatrix() {
     for (var i = 0; i < numLin; i++) {
         Case[i] = [];
@@ -211,9 +194,6 @@ function desenhaMatrix() {
         }
     }
 };
-
-
-
 
 function linhaMeio3(){
     numLin3 = Math.floor(numLin/2 +1);
@@ -275,10 +255,6 @@ function caiemV(vetor,tamanho){
     }
 }
 
-
-
-
-
 function comecoMBV(){
     if(numMensBV%2==0){
     comeco = sequenciaemV[numMensBV-1];
@@ -286,9 +262,6 @@ function comecoMBV(){
     comeco = sequenciaemV[numMensBV-2];
     };
 }
-
-
-
 
 function preencheZeros(){
     for( var i =0 ;i<numCol;i++){
@@ -301,11 +274,6 @@ function preencheZeros(){
     }
 }
 
-
-
-
-
-
 function comprimentoCols2(){
     for (var i = 0; i < numMensBV; i++){
     comprimento2[i] = random((numLin/2)+1,numLin );
@@ -315,7 +283,6 @@ function comprimentoCols2(){
 function linhaMeio2(){
     numLin2=Math.floor(numLin/2);
 }
-
 
 function trocador(d) {
     for (var a = 0; a < numLin; a++) {
@@ -692,5 +659,3 @@ function start3() {
 function abreLink(){
 	window.location.href ='https://github.com/ALY-137/';  
 }
-
-
