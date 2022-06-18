@@ -52,7 +52,7 @@ var meio1 = 0;
 
 var sequenciaemVChuva0 = [];
 
-var guarda = sequenciaemVChuva0[0];
+var guarda = 0;
 //Essa variável guarda o valor da primeira posição da sequencia.
 
 const MensBV = ["B","O","A","S","-","V","I","N","D","A","S"];
@@ -90,6 +90,11 @@ var temporizadorF1 = [];
 var temporizadorF2 = [];
 var temporizadorF3 = [];
 
+const wait = ms => new Promise(resolve => setInterval(resolve, ms));
+let espera = null;
+var prox0 = 0;
+
+
 function pilulaAzul(){
     numLin = 10;
     
@@ -97,32 +102,12 @@ function pilulaAzul(){
         numCol = 19;
     }
     //Limita número de linhas e colunas.
-    criachuvas();
-    redimenChuvas();
-    comprimentoCols0();
-    comprimentoCols2();
-    desenhaMatrix();
-    linhaMeio2();
-    linhaMeio3();
-    colunasMeio();
-    enviaNome();
-    criaSequenciaemV();
-    sequenciaemVChuva0.sort(randOrd);
-//Aleatoriza a sequência.
-    idPosMeio();
-    construVetMens();
-    caiemV(sequenciaemV,numMensBV);
-    comecoMBV();
-    preencheZeros();
-      
-    start0();
-    var some = document.getElementById('Escolha');
-    some.style.display = "none";
+
+    TheMatrix();
 }
 
 function pilulaVermelha(){
     numLin = Math.trunc((altura) / 20);
-    
     //Essas variáveis foram criadas a fim de obter o número de colunas e linhas da matrix dividindo o valor das dimensões de tela com o valor em pixels dos caracteres que irão percorrer a matrix.
 
     if(numCol%2==0){
@@ -130,24 +115,28 @@ function pilulaVermelha(){
     }
     //A fim de obter uma centralização perfeita para a frase de BOAS-VINDAS, nessa condição o número de colunas passa a ser impar caso for par.
     
-    criachuvas();
-    redimenChuvas();
-    comprimentoCols0();
+    TheMatrix();
+}
+
+
+function TheMatrix(){
+    criachuvas(); // Essas divs são criadas para armazenar separamente cada sessão de chuva da animação da matrix.
+    redimenChuvas(); // Essas variáveis tem a finalidade de definir e atribuir as dimensões exatas da div que irá armazenar a matrix.
+    comprimentoCols0(); //Esse array determina o comprimento de uma coluna de chuva variando aleatóriamente.
     comprimentoCols2();
-    desenhaMatrix();
+    desenhaMatrix(); //Essa função desenha a base da matrix sobrepondo as 4 sessões de chuva.
     linhaMeio2();
     linhaMeio3();
-    colunasMeio();
+    colunasMeio(); // Tem o objetivo de identificar o caractere que fica no meio de uma linha. 
     enviaNome();
-    criaSequenciaemV();
-    sequenciaemVChuva0.sort(randOrd);
-    //Aleatoriza a sequência.
-    idPosMeio();
+    criaSequenciaemV(); //Esse for define os valores do array que refere a sequencia do primeiro ciclo da chuva.
+    guardaPos();
+    sequenciaemVChuva0.sort(randOrd); // Aleatoriza a sequência.
+    idPosMeio(); // Esse for percorre o vetor da sequência e quando identifica a posição do meio troca o seu valor pelo valor da primeira posição.
     construVetMens();
-    caiemV(sequenciaemV,numMensBV);
-    comecoMBV();
-    preencheZeros();
-    
+    caiemV(sequenciaemV,numMensBV); // Organiza a sequência para que as letras caem na forma de V.
+    comecoMBV(); // Identifica a posição em que a MensBV deve começar para ficar centralizada.
+    preencheZeros(); // Esse for preenche com zeros as posições que antecedem a posição que foi identificada como a de início da frase.
     start0();
     var some = document.getElementById('Escolha');
     some.style.display = "none";
@@ -160,7 +149,6 @@ function criachuvas(){
         document.getElementById('Matrix').appendChild(chuvas[i]);
     }
 }
-//Essas divs são criadas para armazenar separamente cada sessão de chuva da animação da matrix.
 
 function redimenChuvas(){
 chuvaAltura = numLin * 20;
@@ -186,14 +174,12 @@ var chuvamatrix = document.getElementById('chuva3');
 chuvamatrix.style.height = `${chuvaAltura}px`;
 chuvamatrix.style.width = `${chuvaLargura}px`;
 }
-//Essas variáveis tem a finalidade de definir e atribuir as dimensões exatas da div que irá armazenar a matrix.
 
 function comprimentoCols0(){
     for (var i = 0; i < numCol; i++) {
         comprimento0[i] = random(numLin+1, numLin + numLin/2);
     }    
 }
-//Esse array determina o comprimento de uma coluna de chuva variando aleatóriamente.
 
 
 function desenhaMatrix() {
@@ -225,7 +211,6 @@ function desenhaMatrix() {
         }
     }
 };
-//Essa função desenha a base da matrix sobrepondo as 4 sessões de chuva.
 
 
 
@@ -238,45 +223,35 @@ function colunasMeio(){
     meio =  Math.trunc(numCol / 2);
     meio1 = meio;
 }
-//Essas variável tem o objetivo de identificar o caractere que fica no meio de uma linha. 
-
-
 
 function criaSequenciaemV(){
     for (var i = 0; i <= numCol - 1; i++) {
     sequenciaemVChuva0[i] = i;
 }
 }
-//Esse for define os valores do array que refere a sequencia do primeiro ciclo da chuva.
 
-
+function guardaPos(){
+    guarda = sequenciaemVChuva0[0];
+}
 
 function randOrd() {
     return (Math.round(Math.random()) - 0.5);
 }
 //Essa função troca de posição os valores de um vetor aleatóriamente.
 
-
-
-
 function idPosMeio(){
-for (var i = 0; i <= numCol; i++) {
-    if (sequenciaemVChuva0[i] == meio) {
+    for (var i = 0; i <= numCol; i++) {
+        if (sequenciaemVChuva0[i] == meio) {
         sequenciaemVChuva0[i] = guarda;
         sequenciaemVChuva0[0] = meio;
+        }
     }
 }
-
-}
-
-//Esse for percorre o vetor da sequência e quando identifica a posição do meio troca o seu valor pelo valor da primeira posição.
-
-
 
 function construVetMens(){
     for(var i=0;i<numCol;i++){
     mensagem0[i]= i;
-}
+    }
 }
 
 function caiemV(vetor,tamanho){
@@ -299,7 +274,7 @@ function caiemV(vetor,tamanho){
         }
     }
 }
-//Organiza a sequência para que as letras caem na forma de V.
+
 
 
 
@@ -307,13 +282,13 @@ function caiemV(vetor,tamanho){
 function comecoMBV(){
     if(numMensBV%2==0){
     comeco = sequenciaemV[numMensBV-1];
-}else{
+    }else{
     comeco = sequenciaemV[numMensBV-2];
-};
+    };
 }
 
 
-//Identifica a posição em que a MensBV deve começar para ficar centralizada.
+
 
 function preencheZeros(){
     for( var i =0 ;i<numCol;i++){
@@ -326,7 +301,7 @@ function preencheZeros(){
     }
 }
 
-//Esse for preenche com zeros as posições que antecedem a posição que foi identificada como a de início da frase.
+
 
 
 
@@ -341,9 +316,6 @@ function linhaMeio2(){
     numLin2=Math.floor(numLin/2);
 }
 
-const wait = ms => new Promise(resolve => setInterval(resolve, ms));
-let espera = null;
-var prox0 = 0;
 
 function trocador(d) {
     for (var a = 0; a < numLin; a++) {
@@ -414,13 +386,12 @@ async function anima0() {
 
 
 function enviaNome(){ 
-    
-    nome = 'SAVANNA';
+
+    var nomeGoogle = document.getElementById('given_name');
+    nome = nomeGoogle.textContent;
     numNome = nome.length;
     MensBVNome = nome.split('');
-    console.log(nome)
-    console.log(numNome)
-
+    
         for(var i=0;i<numCol;i++){
             mensagem1[i]= i;
         }
@@ -562,7 +533,6 @@ function start1() {
     tempAnima1 = setInterval(async () => await anima1(), 80);
 }
 
-
 async function anima2() {
     for (var a = 0; a < numLin2 -1 ; a++) {
         for (var b = 0; b < numCol; b++) {
@@ -625,7 +595,6 @@ async function anima2() {
 
 
 function start2() {
-
     for (var i = 0; i <= numCol; i++) {
         aLi2[i] = 0;
         aLf2[i] = 0;
@@ -639,8 +608,7 @@ function start2() {
 var conta = 0;
 
 
-async function anima3() {
-    
+async function anima3() {  
     for (var a = 0; a < numLin3 -1 ; a++) {
         for (var b = 0; b < numCol; b++) {
             if (b % 2 == 0) {
