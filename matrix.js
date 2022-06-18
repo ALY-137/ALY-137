@@ -351,7 +351,6 @@ async function anima0() {
 
 };
 
-
 function enviaNome(){ 
 
     var nomeGoogle = document.getElementById('given_name');
