@@ -1,5 +1,5 @@
 function verifica(){
-    var verificacao = document.getElementById('given_name');
+    var verificacao = document.getElementById('email');
     verificacao = verificacao.textContentgit;
     console.log(verificacao);
     
