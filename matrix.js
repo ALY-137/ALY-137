@@ -80,30 +80,21 @@ const wait = ms => new Promise(resolve => setInterval(resolve, ms));
 let espera = null;
 var prox0 = 0;
 
-function pilulaAzul(){
-    numLin = 10;
+var selectVioleta = 0;
+var selectAzul = 0;
+
+function tomaPilulaVioleta(){
+
+    tomaVioleta = 1;
+    numLin = 8;
     
-    if(numCol>19){
-        numCol = 19;
+    if(numCol>13){
+        numCol = 13;
     }
     //Limita número de linhas e colunas.
-
-    TheMatrix();
-}
-
-function pilulaVermelha(){
-    numLin = Math.trunc((altura) / 20);
-    //Essas variáveis foram criadas a fim de obter o número de colunas e linhas da matrix dividindo o valor das dimensões de tela com o valor em pixels dos caracteres que irão percorrer a matrix.
-
-    if(numCol%2==0){
-    numCol = numCol -1;
-    }
-    //A fim de obter uma centralização perfeita para a frase de BOAS-VINDAS, nessa condição o número de colunas passa a ser impar caso for par.
+    //A fim de obter uma centralização perfeita para a frase de BOAS-VINDAS o número de colunas passa a ser impar.
     
-    TheMatrix();
-}
 
-function TheMatrix(){
     criachuvas(); // Essas divs são criadas para armazenar separamente cada sessão de chuva da animação da matrix.
     redimenChuvas(); // Essas variáveis tem a finalidade de definir e atribuir as dimensões exatas da div que irá armazenar a matrix.
     comprimentoCols0(); //Esse array determina o comprimento de uma coluna de chuva variando aleatóriamente.
@@ -125,6 +116,37 @@ function TheMatrix(){
     var some = document.getElementById('Escolha');
     some.style.display = "none";
 }
+
+function tomaPilulaAzul(){
+
+    tomaAzul = 1;
+    numLin = Math.trunc((altura) / 20);
+    //Essas variáveis foram criadas a fim de obter o número de colunas e linhas da matrix dividindo o valor das dimensões de tela com o valor em pixels dos caracteres que irão percorrer a matrix.
+
+    if(numCol%2==0){
+    numCol = numCol -1;
+    }
+   
+    criachuvas(); // Essas divs são criadas para armazenar separamente cada sessão de chuva da animação da matrix.
+    redimenChuvas(); // Essas variáveis tem a finalidade de definir e atribuir as dimensões exatas da div que irá armazenar a matrix.
+    comprimentoCols0(); //Esse array determina o comprimento de uma coluna de chuva variando aleatóriamente.
+    comprimentoCols2();
+    desenhaMatrix(); //Essa função desenha a base da matrix sobrepondo as 4 sessões de chuva.
+    linhaMeio2();
+    linhaMeio3();
+    colunasMeio(); // Tem o objetivo de identificar o caractere que fica no meio de uma linha. 
+   
+    criaSequenciaemV(); //Esse for define os valores do array que refere a sequencia do primeiro ciclo da chuva.
+    guardaPos();
+    sequenciaemVChuva0.sort(randOrd); // Aleatoriza a sequência.
+    idPosMeio(); // Esse for percorre o vetor da sequência e quando identifica a posição do meio troca o seu valor pelo valor da primeira posição.
+    
+    
+    start0();
+    var some = document.getElementById('Escolha');
+    some.style.display = "none";
+}
+
 
 function criachuvas(){
     for(var i=0;i<4;i++){
@@ -355,6 +377,7 @@ function enviaNome(){
 
     var nomeGoogle = document.getElementById('given_name');
     nome = nomeGoogle.textContent;
+    nome = nome.toUpperCase();
     numNome = nome.length;
     MensBVNome = nome.split('');
     
@@ -414,6 +437,7 @@ function enviaNome(){
 
 
 function start0() {
+    prox0 = 0;
 
     for (var i = 0; i <= numCol; i++) {
         aLi0[i] = 0;
@@ -453,20 +477,19 @@ async function anima1() {
 
         temporizadorI1[j] += 1;
         
-        if (temporizadorI1[j] > numLin + numLin/2) {
+        if (temporizadorI1[j] > numLin + numLin/2){
             prox1 += 1;
-            if (prox1 == 1) {
+            if (prox1 == 1){
                 start2();
                 start3();
             }
         }
 
-        if (temporizadorI1[j] < numLin) {
+        if (temporizadorI1[j] < numLin){
             aLi1[j] += 1;
-
         };
 
-        if (temporizadorI1[j] >= comprimento0[j]) {
+        if (temporizadorI1[j] >= comprimento0[j]){
 
             matrix[aLf1[j]][sequenciaemVChuva0[j]][1].setAttribute('class', 'numOff');
 
@@ -489,6 +512,7 @@ async function anima1() {
 
 
 function start1() {
+    prox1 = 0;
 
     for (var i = 0; i <= numCol; i++) {
         aLi1[i] = 0;
@@ -618,7 +642,7 @@ async function anima3() {
 
             temporizadorF3[j] += 1;
 
-            if (temporizadorF3[j] > (numLin/2) * 8) {
+            if (temporizadorF3[j] > (numLin/2) * 12) {
                 clearInterval(tempAnima3);
                 
                 
@@ -661,19 +685,73 @@ function abreLink(){
 
 function verifica(){
     var verificacao = document.getElementById('verifiedEmail');
-    var verificacao1 = verificacao.textContent;
-    console.log(verificacao1);
+    verificacao = verificacao.textContent;
     
-    if(verificacao1=="true"){
-        window.location.href ='https://aly-137.com';  
+    if(verificacao=="true"){ 
 
         var recebe = document.getElementById('Escolha');
         recebe.style.display = "block";
 
         var recebe = document.getElementById('Matrix');
         recebe.style.display = "block";
-    }else{
-        window.location.href ='https://aly-137.com/login.html'; 
+
+        var recebe = document.getElementById('Login');
+        recebe.style.display = "none";
+
+        var recebe = document.getElementById('Logo');
+        recebe.style.display = "none";
+
+        var recebe = document.getElementById('buttonDiv');
+        recebe.style.display = "none";
     }
+}
+
+function selectPilulaVioleta(){
+    var recebe = document.getElementById('pilulaAzulReserva');
+    recebe.style.display = "block";
+
+    var recebe = document.getElementById('pilulaVioletaReserva');
+    recebe.style.display = "none";
+
+    var recebe = document.getElementById('pilulaAzul');
+    recebe.style.display = "none";
+
+    var recebe = document.getElementById('pilulaVioleta');
+    recebe.style.display = "block";
+
+    var recebe = document.getElementById('txtAzul');
+    recebe.style.display = "none";
+
+    var recebe = document.getElementById('txtVioleta');
+    recebe.style.display = "block";
+
+    var recebe = document.getElementById('reserva');
+    recebe.style.right = "250px";
+    recebe.style.left = "0px";
+
+}
+function selectPilulaAzul(){
+    var recebe = document.getElementById('pilulaAzulReserva');
+    recebe.style.display = "none";
+
+    var recebe = document.getElementById('pilulaVioletaReserva');
+    recebe.style.display = "block";
+
+    var recebe = document.getElementById('pilulaAzul');
+    recebe.style.display = "block";
+
+    var recebe = document.getElementById('pilulaVioleta');
+    recebe.style.display = "none";
+
+    var recebe = document.getElementById('txtAzul');
+    recebe.style.display = "block";
+
+    var recebe = document.getElementById('txtVioleta');
+    recebe.style.display = "none";
+
+    var recebe = document.getElementById('reserva');
+    recebe.style.right = "0px";
+    recebe.style.left = "250px";
+
 }
 

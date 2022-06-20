@@ -10,16 +10,44 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
     
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+    <script src="login.js"></script>
+    
     <title>ALY-137</title>
 </head>
-<body onload="verifica()">
-    <img src="logo.png" id="logo">
-    <div id="Escolha">
-        <div id="pilulas">
-            <img src="pR.png" id="pR" onclick="pilulaVermelha()">
-            <img src="pB.png" id="pB" onclick="pilulaAzul()">
-        </div>
+<body>
+    <div id="buttonDiv"></div>
+
+    <div id="Login">
+        
+        <p id="fullName"></p>
+        <p id="sub"></p>
+        <p id="given_name"></p>
+        <p id="family_name"></p>
+        <p id="email"></p>
+        <p id="verifiedEmail"></p>
+        <img onload="verifica()" id="picture" />
     </div>
+    
+    <img src="logo.png" id="Logo">
+
+    <div id="Escolha">
+
+        <div id="reserva">
+            <img src="pilulaAzul.png" id="pilulaAzulReserva" style="transform:rotate(90deg);" onclick="selectPilulaAzul()">
+            <img src="pilulaVioleta.png" id="pilulaVioletaReserva" style="transform:rotate(90deg);" onclick="selectPilulaVioleta()">
+        </div>
+
+        <div id="seleciona">
+            <img src="pilulaAzul.png" id="pilulaAzul" onclick="tomaPilulaAzul()">
+            <img src="pilulaVioleta.png" id="pilulaVioleta" onclick="tomaPilulaVioleta()">
+            <p class="tomar" id="txtAzul" onclick="tomaPilulaAzul()">TOMAR</p>
+            <p class="tomar" id="txtVioleta" onclick="tomaPilulaVioleta()">TOMAR</p>
+        </div>
+
+    </div>
+
     <div id="Matrix"></div>
     <script src="matrix.js"></script>
     

@@ -108,82 +108,30 @@ body{
 }
 
 
-#start0{
-    z-index: 11;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: #521796;
-    color: #e8d4ff;
-    top: 0;
-    bottom: -30px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-bottom: #ffffff;
-    border-radius: 10px;
-    border-style: double;
-    border: 10px;
-    font-size: 30px;
-    font-family: 'Special Elite', cursive;
-    text-shadow:                                                                                                    
-    0 0 1px #7e0eff5f,
-    0 0 2px #7e0eff5f,
-    0 0 3px #7e0eff5f,
-    0 0 4px #7e0eff5f,
-    0 0 5px #7e0eff5f,
-    0 0 6px #7e0eff5f,
-    0 0 7px #7e0eff5f,
-    0 0 8px #7e0eff5f;;
-    box-shadow: 
-    0 0 1px #7e0eff5f,
-    0 0 2px #7e0eff5f,
-    0 0 3px #7e0eff5f,
-    0 0 4px #7e0eff5f,
-    0 0 5px #7e0eff5f,
-    0 0 6px #7e0eff5f,
-    0 0 7px #7e0eff5f,
-    0 0 8px #7e0eff5f;
-}
-
-#nome{
+.tomar{
     z-index: 10;
     position: absolute;
-    width: 250px;
-    height: 30px;
-    background-color: #120044;
-    color: #ffffff4e;
-    top: 0;
-    bottom: 100px;
-    left: 0;
-    right: 0;
+    width: 100px;
+    height: 100px;
+    color: #ffffff38;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
     margin: auto;
-    border-bottom: #ffffff;
-    border-radius: 10px;
-    border-style: double;
-    border: 10px;
-    font-size: 25px;
+    padding: 0px;
+    font-size: 35px;
     text-align: center;
     font-family: 'Special Elite', cursive;
     text-shadow:                                                                                                    
-    0 0 1px #7e0eff5f,
-    0 0 2px #7e0eff5f,
-    0 0 3px #7e0eff5f,
-    0 0 4px #7e0eff5f,
-    0 0 5px #7e0eff5f,
-    0 0 6px #7e0eff5f,
-    0 0 7px #7e0eff5f,
-    0 0 8px #7e0eff5f;;
-    box-shadow: 
-    0 0 1px #7e0eff5f,
-    0 0 2px #7e0eff5f,
-    0 0 3px #7e0eff5f,
-    0 0 4px #7e0eff5f,
-    0 0 5px #7e0eff5f,
-    0 0 6px #7e0eff5f,
-    0 0 7px #7e0eff5f,
-    0 0 8px #7e0eff5f;
-    outline: 0;
+    0 0 1px #ffffff38,
+    0 0 2px #ffffff38,
+    0 0 3px #ffffff38,
+    0 0 4px #ffffff38,
+    0 0 5px #ffffff38,
+    0 0 6px #ffffff38,
+    0 0 7px #ffffff38,
+    0 0 8px #ffffff38;
 }
 
 #p0{
@@ -207,7 +155,7 @@ body{
 
 #Escolha{
     position: absolute;
-    z-index: 5;    
+    z-index: 6;    
     top: 0;
     bottom: 0;
     left: 0;
@@ -216,12 +164,11 @@ body{
     background-color: #07001a; 
     border: none;
     display: none;
-
 }
 
-#pilulas{
-    height: 80px;
-    width: 160px;
+#seleciona{
+    height: 60px;
+    width: 192px;
     background-color: #07001a;
     top: 0;
     bottom: 0;
@@ -231,18 +178,22 @@ body{
     position: absolute;  
 }
 
-#pB{
-    height: 80px;
-    width: 80px; 
+#pilulaVioleta{
+    height: 60px;
+    width: 192px; 
+    position: absolute;
+    cursor:pointer;
+}
+
+#pilulaAzul{
+    height: 60px;
+    width: 192px; 
+    display: none;
+    cursor:pointer;
     position: absolute;
 }
 
-#pR{
-    height: 80px;
-    width: 80px; 
-}
-
-#logo{
+#Logo{
     width: 150px;
     height: 150px;
     top: 0px;
@@ -250,6 +201,47 @@ body{
     left: 0px;
     right: 0px;
     margin: auto;
+    position: absolute;  
+}
+
+#Login{
+    z-index: 5;
+    display: none;
+}
+
+#pilulaVioletaReserva{
+    display: none;
+    height: 15px;
+    width: 50px;
+    cursor:pointer;
+}
+
+#pilulaAzulReserva{
+    height: 15px;
+    width: 50px; 
+    cursor:pointer;   
+}
+
+#reserva{
+    right: 250px;
+    left: 0px;
+    margin: auto;
     position: absolute;
-    
+    width: 50px;
+    height: 15px;
+    background-color: #07001a;
+    padding: 30px;
+}
+
+#txtAzul{
+    display: none;
+    cursor:pointer;
+    height: 25px;
+
+}
+#txtVioleta{
+    display: block;
+    cursor:pointer;
+    height: 25px;
+   
 }
