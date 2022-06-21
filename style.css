@@ -197,7 +197,7 @@ body{
     width: 150px;
     height: 150px;
     top: 0px;
-    bottom: 0px;
+    bottom: 200px;
     left: 0px;
     right: 0px;
     margin: auto;
@@ -242,6 +242,15 @@ body{
 #txtVioleta{
     display: block;
     cursor:pointer;
-    height: 25px;
-   
+    height: 25px;  
+}
+
+#buttonDiv{
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    top: 0px;
+    position: absolute;
+    margin: auto;
+    height: 0px
 }
