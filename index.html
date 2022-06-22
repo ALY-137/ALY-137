@@ -33,12 +33,12 @@
     });
     google.accounts.id.renderButton(
       document.getElementById("buttonDiv"),
-      { theme: "filled_black", 
+      { theme: "outline", 
       size: "medium",
-      type:"standard",
-      shape:"rectangular",
+      type:"icon",
+      shape:"circle",
       text:"$ {button.text}",
-      locale:"pt-BR"
+      locale:"pt-BR",
      }  // customization attributes
     );
     google.accounts.id.prompt(); // also display the One Tap dialog
