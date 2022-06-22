@@ -33,14 +33,13 @@
     });
     google.accounts.id.renderButton(
       document.getElementById("buttonDiv"),
-      { theme: "outline", 
+      { theme: "filled_black", 
       size: "medium",
       type:"standard",
-      shape:"pill",
+      shape:"rectangular",
       text:"$ {button.text}",
       locale:"pt-BR",
-      logo_alignment:"left",
-      width: "40px"
+      logo_alignment:"left"
      }  // customization attributes
     );
     google.accounts.id.prompt(); // also display the One Tap dialog
