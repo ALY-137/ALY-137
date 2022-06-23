@@ -761,6 +761,6 @@ function selectPilulaAzul(){
 
 function enviaForm(){
     var nomeGoogle = document.getElementById('given_name');
-    var nomeForm = document.createProcessingInstruction('nomeForm');
+    var nomeForm = document.getElementById('nomeForm');
     nomeForm.value = nomeGoogle.textContent;
 }
