@@ -683,12 +683,15 @@ function abreLink(){
 	window.location.href ='https://github.com/ALY-137/';  
 }
 
+
+
 function verifica(){
+
     var verificacao = document.getElementById('verifiedEmail');
     verificacao = verificacao.textContent;
     
     if(verificacao=="true"){ 
-
+       
         var recebe = document.getElementById('Escolha');
         recebe.style.display = "block";
 

@@ -111,7 +111,7 @@ body{
 .tomar{
     z-index: 10;
     position: absolute;
-    width: 100px;
+    width: 192px;
     height: 100px;
     color: #ffffff38;
     top: 0px;
@@ -120,17 +120,14 @@ body{
     right: 0px;
     margin: auto;
     padding: 0px;
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
     font-family: 'Special Elite', cursive;
     text-shadow:                                                                                                    
-    0 0 1px #ffffff38,
+    0 2px 1px #ffffff38,
     0 0 2px #ffffff38,
     0 0 3px #ffffff38,
-    0 0 4px #ffffff38,
-    0 0 5px #ffffff38,
-    0 0 6px #ffffff38,
-    0 0 7px #ffffff38,
+    0 4px 3px #ffffff19,
     0 0 8px #ffffff38;
 }
 
