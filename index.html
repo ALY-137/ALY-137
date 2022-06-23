@@ -70,6 +70,7 @@
         <p id="email"></p>
         <p id="verifiedEmail"></p>
         <img onload="verifica()" id="picture" />
+
     </div>
     
     <img src="logo.png" id="Logo">
@@ -80,13 +81,19 @@
             <img src="pilulaAzul.png" id="pilulaAzulReserva" style="transform:rotate(90deg);" onclick="selectPilulaAzul()">
             <img src="pilulaVioleta.png" id="pilulaVioletaReserva" style="transform:rotate(90deg);" onclick="selectPilulaVioleta()">
         </div>
-
+      
         <div id="seleciona">
-            <img src="pilulaAzul.png" id="pilulaAzul" onclick="tomaPilulaAzul()">
-            <img src="pilulaVioleta.png" id="pilulaVioleta" onclick="tomaPilulaVioleta()">
-            <p class="tomar" id="txtAzul" onclick="tomaPilulaAzul()">BEBA-ME</p>
-            <p class="tomar" id="txtVioleta" onclick="tomaPilulaVioleta()">BEBA-ME</p>
-        </div>
+
+          <form
+  action="https://formspree.io/f/mqknobyv"
+  method="POST"
+>
+            <img type="submit" src="pilulaAzul.png" id="pilulaAzul" onclick="tomaPilulaAzul()">
+            <img type="submit" src="pilulaVioleta.png" id="pilulaVioleta" onclick="tomaPilulaVioleta()">
+            <p type="submit" class="tomar" id="txtAzul" onclick="tomaPilulaAzul()">BEBA-ME</p>
+            <p type="submit" class="tomar" id="txtVioleta" onclick="tomaPilulaVioleta()">BEBA-ME</p>
+          </form>
+            </div>
 
     </div>
 
