@@ -129,8 +129,7 @@ function tomaPilulaAzul(){
     comprimentoCols0(); //Esse array determina o comprimento de uma coluna de chuva variando aleatóriamente.
     comprimentoCols2();
     desenhaMatrix(); //Essa função desenha a base da matrix sobrepondo as 4 sessões de chuva.
-    linhaMeio2();
-    linhaMeio3();
+    
     colunasMeio(); // Tem o objetivo de identificar o caractere que fica no meio de uma linha. 
    
     criaSequenciaemV(); //Esse for define os valores do array que refere a sequencia do primeiro ciclo da chuva.
@@ -224,7 +223,7 @@ function colunasMeio(){
 }
 
 function criaSequenciaemV(){
-    for (var i = 0; i <= numCol; i++) {
+    for (var i = 0; i <= numCol-1; i++) {
     sequenciaemVChuva0[i] = i;
 }
 }
