@@ -123,10 +123,7 @@ function tomaPilulaAzul(){
     numLin = Math.trunc((altura) / 20);
     //Essas variáveis foram criadas a fim de obter o número de colunas e linhas da matrix dividindo o valor das dimensões de tela com o valor em pixels dos caracteres que irão percorrer a matrix.
 
-    if(numCol%2==0){
-    numCol = numCol -1;
-    }
-   
+       
     criachuvas(); // Essas divs são criadas para armazenar separamente cada sessão de chuva da animação da matrix.
     redimenChuvas(); // Essas variáveis tem a finalidade de definir e atribuir as dimensões exatas da div que irá armazenar a matrix.
     comprimentoCols0(); //Esse array determina o comprimento de uma coluna de chuva variando aleatóriamente.
