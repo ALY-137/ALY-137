@@ -239,7 +239,7 @@ function randOrd() {
 //Essa função troca de posição os valores de um vetor aleatóriamente.
 
 function idPosMeio(){
-    for (var i = 0; i < numCol; i++) {
+    for (var i = 0; i <= numCol; i++) {
         if (sequenciaemVChuva0[i] == meio) {
         sequenciaemVChuva0[i] = guarda;
         sequenciaemVChuva0[0] = meio;
@@ -318,7 +318,7 @@ function trocador(d) {
 async function anima0() {
     trocador(matrix);
 
-    for (var j = 0; j < numCol; j++) {
+    for (var j = 0; j <= numCol; j++) {
 
         espera = await wait(1280 / (j + 2));
 
