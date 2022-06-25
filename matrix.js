@@ -480,8 +480,13 @@ async function anima1() {
         if (temporizadorI1[j] > numLin + numLin/2){
             prox1 += 1;
             if (prox1 == 1){
-                start2();
-                start3();
+                if(tomaVioleta==1){
+                    start2();
+                    start3();
+                }else{
+                    start0();
+                }
+                
             }
         }
 
