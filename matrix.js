@@ -224,7 +224,7 @@ function colunasMeio(){
 }
 
 function criaSequenciaemV(){
-    for (var i = 0; i <= numCol - 1; i++) {
+    for (var i = 0; i <= numCol; i++) {
     sequenciaemVChuva0[i] = i;
 }
 }
@@ -318,7 +318,7 @@ function trocador(d) {
 async function anima0() {
     trocador(matrix);
 
-    for (var j = 0; j <= numCol; j++) {
+    for (var j = 0; j < numCol; j++) {
 
         espera = await wait(1280 / (j + 2));
 
