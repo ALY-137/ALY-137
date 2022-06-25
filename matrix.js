@@ -223,7 +223,7 @@ function colunasMeio(){
 }
 
 function criaSequenciaemV(){
-    for (var i = 0; i <= numCol-1; i++) {
+    for (var i = 0; i <= numCol; i++) {
     sequenciaemVChuva0[i] = i;
 }
 }
@@ -238,7 +238,7 @@ function randOrd() {
 //Essa função troca de posição os valores de um vetor aleatóriamente.
 
 function idPosMeio(){
-    for (var i = 0; i <= numCol -1; i++) {
+    for (var i = 0; i <= numCol ; i++) {
         if (sequenciaemVChuva0[i] == meio) {
         sequenciaemVChuva0[i] = guarda;
         sequenciaemVChuva0[0] = meio;
