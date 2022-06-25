@@ -80,8 +80,8 @@ const wait = ms => new Promise(resolve => setInterval(resolve, ms));
 let espera = null;
 var prox0 = 0;
 
-var selectVioleta = 0;
-var selectAzul = 0;
+var tomaVioleta = 0;
+var tomaAzul = 0;
 
 function tomaPilulaVioleta(){
 
@@ -345,15 +345,15 @@ async function anima0() {
         }
 
         temporizadorI0[j] += 1;
-        if (temporizadorI0[j] > numLin) {
+        if(temporizadorI0[j] > numLin){
             prox0 += 1;
-            if (prox0 == 1) {
+            if (prox0 == 1){
                 start1();
             }
         }
 
 
-        if (temporizadorI0[j] < numLin) {
+        if(temporizadorI0[j] < numLin){
             aLi0[j] += 1;
         };
 
