@@ -707,6 +707,8 @@ function verifica(){
 
         var recebe = document.getElementById('buttonDiv');
         recebe.style.display = "none";
+
+        tomaPilulaVioleta();        
     }
 }
 
