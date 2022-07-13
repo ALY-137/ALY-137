@@ -117,31 +117,7 @@ function tomaPilulaVioleta(){
     some.style.display = "none";
 }
 
-function tomaPilulaAzul(){
 
-    tomaAzul = 1;
-    numLin = Math.trunc((altura) / 20);
-    //Essas variáveis foram criadas a fim de obter o número de colunas e linhas da matrix dividindo o valor das dimensões de tela com o valor em pixels dos caracteres que irão percorrer a matrix.
-
-       
-    criachuvas(); // Essas divs são criadas para armazenar separamente cada sessão de chuva da animação da matrix.
-    redimenChuvas(); // Essas variáveis tem a finalidade de definir e atribuir as dimensões exatas da div que irá armazenar a matrix.
-    comprimentoCols0(); //Esse array determina o comprimento de uma coluna de chuva variando aleatóriamente.
-    comprimentoCols2();
-    desenhaMatrix(); //Essa função desenha a base da matrix sobrepondo as 4 sessões de chuva.
-    
-    colunasMeio(); // Tem o objetivo de identificar o caractere que fica no meio de uma linha. 
-   
-    criaSequenciaemV(); //Esse for define os valores do array que refere a sequencia do primeiro ciclo da chuva.
-    guardaPos();
-    sequenciaemVChuva0.sort(randOrd); // Aleatoriza a sequência.
-    idPosMeio(); // Esse for percorre o vetor da sequência e quando identifica a posição do meio troca o seu valor pelo valor da primeira posição.
-    
-    
-    start0();
-    var some = document.getElementById('Escolha');
-    some.style.display = "none";
-}
 
 
 function criachuvas(){
@@ -223,7 +199,7 @@ function colunasMeio(){
 }
 
 function criaSequenciaemV(){
-    for (var i = 0; i <= numCol; i++) {
+    for (var i = 0; i < numCol; i++) {
     sequenciaemVChuva0[i] = i;
 }
 }
@@ -238,7 +214,7 @@ function randOrd() {
 //Essa função troca de posição os valores de um vetor aleatóriamente.
 
 function idPosMeio(){
-    for (var i = 0; i <= numCol ; i++) {
+    for (var i = 0; i < numCol ; i++) {
         if (sequenciaemVChuva0[i] == meio) {
         sequenciaemVChuva0[i] = guarda;
         sequenciaemVChuva0[0] = meio;
