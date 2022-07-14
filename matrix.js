@@ -668,9 +668,6 @@ function verifica(){
     verificacao = verificacao.textContent;
     
     if(verificacao=="true"){ 
-       
-        var recebe = document.getElementById('Escolha');
-        recebe.style.display = "block";
 
         var recebe = document.getElementById('Matrix');
         recebe.style.display = "block";
