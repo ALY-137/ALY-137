@@ -107,89 +107,6 @@ body{
     0 0 8px #7e0eff;
 }
 
-
-.tomar{
-    z-index: 10;
-    position: absolute;
-    width: 192px;
-    height: 100px;
-    color: #ffffff38;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin: auto;
-    padding: 0px;
-    font-size: 30px;
-    text-align: center;
-    font-family: 'Special Elite', cursive;
-    text-shadow:                                                                                                    
-    0 2px 1px #ffffff38,
-    0 0 2px #ffffff38,
-    0 0 3px #ffffff38,
-    0 4px 3px #ffffff19,
-    0 0 8px #ffffff38;
-}
-
-#p0{
-    color: #7e0eff;
-    z-index: 9;
-    position: absolute;
-    top: 0;
-    bottom: 90px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    font-family: 'Special Elite', cursive;
-    border: none;
-    border-style: none;
-    outline: 0;
-    background-color: #07001a ;    
-    font-size: 13px;
-    text-align: center;
-    text-decoration:underline;
-}
-
-#Escolha{
-    position: absolute;
-    z-index: 6;    
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    background-color: #07001a; 
-    border: none;
-    display: none;
-}
-
-#seleciona{
-    height: 60px;
-    width: 192px;
-    background-color: #07001a;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    position: absolute;  
-}
-
-#pilulaVioleta{
-    height: 60px;
-    width: 192px; 
-    position: absolute;
-    cursor:pointer;
-}
-
-#pilulaAzul{
-    height: 60px;
-    width: 192px; 
-    display: none;
-    cursor:pointer;
-    position: absolute;
-}
-
 #Logo{
     width: 150px;
     height: 150px;
@@ -204,43 +121,6 @@ body{
 #Login{
     z-index: 5;
     display: none;
-}
-
-#pilulaVioletaReserva{
-    display: none;
-    height: 15px;
-    width: 50px;
-    cursor:pointer;
-}
-
-#pilulaAzulReserva{
-    height: 15px;
-    width: 50px; 
-    cursor:pointer;   
-    display: none;
-}
-
-#reserva{
-    right: 250px;
-    left: 0px;
-    margin: auto;
-    position: absolute;
-    width: 50px;
-    height: 15px;
-    background-color: #07001a;
-    padding: 30px;
-}
-
-#txtAzul{
-    display: none;
-    cursor:pointer;
-    height: 25px;
-
-}
-#txtVioleta{
-    display: block;
-    cursor:pointer;
-    height: 25px;  
 }
 
 #buttonDiv{
