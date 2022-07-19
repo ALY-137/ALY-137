@@ -1,12 +1,12 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyDr98OIMo6OuBRgVBHnO1Fv48lKOkXX26M",
-    authDomain: "aly-137-fbf04.firebaseapp.com",
-    projectId: "aly-137-fbf04",
-    storageBucket: "aly-137-fbf04.appspot.com",
-    messagingSenderId: "983100320011",
-    appId: "1:983100320011:web:43c2ab72720981ea709a0e",
-    measurementId: "G-K4RT2FBGB7"
-  };
+  apiKey: "AIzaSyAgkMZfiWEqa-KdIEcqm5Z566L_8oGzRqY",
+  authDomain: "aly-137-fbf04.firebaseapp.com",
+  projectId: "aly-137-fbf04",
+  storageBucket: "aly-137-fbf04.appspot.com",
+  messagingSenderId: "983100320011",
+  appId: "1:983100320011:web:43c2ab72720981ea709a0e",
+  measurementId: "G-K4RT2FBGB7"
+};
 
 
   firebase.initializeApp(firebaseConfig);

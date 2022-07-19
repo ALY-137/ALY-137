@@ -113,8 +113,7 @@ function tomaPilulaVioleta(){
     comecoMBV(); // Identifica a posição em que a MensBV deve começar para ficar centralizada.
     preencheZeros(); // Esse for preenche com zeros as posições que antecedem a posição que foi identificada como a de início da frase.
     start0();
-    var some = document.getElementById('Escolha');
-    some.style.display = "none";
+    
 }
 
 
