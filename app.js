@@ -4,8 +4,7 @@ const firebaseConfig = {
   projectId: "aly-137-fbf04",
   storageBucket: "aly-137-fbf04.appspot.com",
   messagingSenderId: "983100320011",
-  appId: "1:983100320011:web:43c2ab72720981ea709a0e",
-  measurementId: "G-K4RT2FBGB7"
+  appId: "1:983100320011:web:43c2ab72720981ea709a0e"
 };
 
 

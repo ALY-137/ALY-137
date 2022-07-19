@@ -12,15 +12,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
     
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
-     
+   
 
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+   
 
 
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
+     
     <script>
     function handleCredentialResponse(response) {
     const data = jwt_decode(response.credential)
@@ -75,7 +77,7 @@
         <p id="family_name"></p>
         <p id="email"></p>
         <p id="verifiedEmail"></p>
-        <img onload="verificaLogin()" id="picture" />
+        <img onload="verificaLogin(),verifica()" id="picture" />
 
     </div>
     
