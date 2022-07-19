@@ -14,7 +14,12 @@
     
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
-    
+     
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
+
 
     <script>
     function handleCredentialResponse(response) {
@@ -70,7 +75,7 @@
         <p id="family_name"></p>
         <p id="email"></p>
         <p id="verifiedEmail"></p>
-        <img onload="verifica()" id="picture" />
+        <img onload="verifica(),verificaLogin()" id="picture" />
 
     </div>
     
@@ -79,6 +84,8 @@
 
     <div id="Matrix"></div>
     <script src="matrix.js"></script>
+
+    <script src="app.js"></script>
     
 </body>
 </html>
