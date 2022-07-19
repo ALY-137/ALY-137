@@ -34,19 +34,9 @@ const firebaseConfig = {
     
     if(verificacao=="true"){ 
 
-        let bd = firebase.firestore();
+
         let data = new Date();
-        
-
-        bd.collection("usuaries").doc('$idGoogle').get().then(function(doc){
-
-        if(doc.exists){
-
-
-            console.log("USUÁRIO EXISTE");
-        
-
-    }else{
+      
         const user = firebase.firestore().collection("login");
 
         const novoLogin = {
@@ -60,11 +50,8 @@ const firebaseConfig = {
 
         user.add(novoLogin);
 
-        console.log("Não existe!");
+        console.log("LOGIN EFETUADO!");
     }
 
-});
-
-             
-    }
 };
+
