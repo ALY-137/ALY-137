@@ -1,4 +1,4 @@
-<p align="center"><img src="https://user-images.githubusercontent.com/57689838/172229931-b5fe24bc-7f48-43db-bee8-c3e26e2381b5.gif" ></p>
+<p align="center"><img src="[https://github.com/ALY-137/ALY-137/issues/3#issue-1324374885](https://user-images.githubusercontent.com/57689838/182152533-a8c39135-d818-46c0-9e45-099f6baa092c.gif)" ></p>
 </br>
 <p align="center">▚</p>
 </br>
