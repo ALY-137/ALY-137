@@ -45,7 +45,7 @@
       { theme: "outline", 
       size: "medium",
       type:"icon",
-      shape:"circle",
+      shape:"retangular",
       text:"$ {button.text}",
       locale:"pt-BR"
      }  
@@ -67,7 +67,7 @@
     <title>ALY-137</title>
 </head>
 <body>
-    <div id="buttonDiv"></div>
+    
 
     <div id="Login">
         
@@ -80,13 +80,19 @@
         <img onload="verificaLogin(),verifica()" id="picture" />
 
     </div>
+
     
-    <img src="logo.png" id="Logo">
-
-
+    <div id="home">
+      <img src="logo.png" id="Logo">
+      
+      <div id="boxLogin">
+        <p id="textLogin">LOGIN COM GOOGLE</p>
+        <div id="buttonDiv"></div>
+      </div>
+    </div>
+    
     <div id="Matrix"></div>
     <script src="matrix.js"></script>
-
     <script src="app.js"></script>
     
 </body>

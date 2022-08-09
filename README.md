@@ -1,4 +1,4 @@
-<p align="center"><img src="https://user-images.githubusercontent.com/57689838/182152533-a8c39135-d818-46c0-9e45-099f6baa092c.gif" ></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/57689838/172229931-b5fe24bc-7f48-43db-bee8-c3e26e2381b5.gif" ></p>
 </br>
 <p align="center">▚</p>
 </br>
@@ -47,6 +47,3 @@ VS CODE | PHOTOSHOP | ILLUSTRATOR |INDESIGN | GITHUB |
 <p align="center">SAVANNA PASSARELA</p>
 <p align="center">└────────────────────┘</p>
 <p align="center">▚</p>
-
-<div class="badge-base LI-profile-badge" data-locale="pt_BR" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="savanna-passarela-092725241" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://br.linkedin.com/in/savanna-passarela-092725241?trk=profile-badge">Savanna Passarela</a></div>
-              
