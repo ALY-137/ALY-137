@@ -674,10 +674,7 @@ function verifica(){
         var recebe = document.getElementById('Login');
         recebe.style.display = "none";
 
-        var recebe = document.getElementById('Logo');
-        recebe.style.display = "none";
-
-        var recebe = document.getElementById('buttonDiv');
+        var recebe = document.getElementById('home');
         recebe.style.display = "none";
 
         tomaPilulaVioleta();        
