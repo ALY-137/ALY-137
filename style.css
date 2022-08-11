@@ -110,6 +110,8 @@ body{
 #Logo{
     width: 175px;
     height: 175px;
+    justify-content: center;
+    position: relative;
    
 }
 
@@ -118,17 +120,16 @@ body{
     display: none;
 }
 
-#buttonDiv{
-    
-    
+#buttonDiv{ 
     position: relative;
     margin: auto;
     height: 31px;
     width: 31px;
     border-color: #7e0eff;
     border-style: double;
-    bottom: 14px;
-    left: 67px;
+    bottom: 0px;
+    top: 10px;
+    left: 0px;
      
 }
 #textLogin{
@@ -138,36 +139,45 @@ body{
     color: #7e0eff;
     margin: auto;
     padding: auto;
-    top: 12px;
-    left: 8px;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    top: 5px;
 
 }
 
 #boxLogin{
-   
-    border-color: #7e0eff;
     border-style: double;
-    width: 170px;
-    height: 35px;
+    width: 90px;
+    height: 80px;
     top: 0px;
     bottom: 0px;
     left: 0px;
     right: 0px;
     position: relative;
-    background-color: #10003b;
     border-radius: 5px;
-    margin-top: 20px;
- 
+    margin: auto;
+}
 
+#fundo{
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: 5px; 
+    position: absolute;  
+    border-color: #7e0eff;
+    border-style: double; 
+    border-radius: 5px;
 }
 
 #home{
-    width: 175px;
-    height: 240px;
     top: 0px;
     bottom: 0px;
     left: 0px;
     right: 0px;
     margin: auto; 
-    position: absolute;   
+    position: absolute;  
+    width: 175px;
+    height: 275px;
 }

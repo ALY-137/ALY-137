@@ -659,8 +659,6 @@ function abreLink(){
 	window.location.href ='https://github.com/ALY-137/';  
 }
 
-
-
 function verifica(){
 
     var verificacao = document.getElementById('verifiedEmail');
