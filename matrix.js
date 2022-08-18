@@ -117,8 +117,6 @@ function tomaPilulaVioleta(){
 }
 
 
-
-
 function criachuvas(){
     for(var i=0;i<4;i++){
         chuvas[i] = document.createElement("div");

@@ -7,5 +7,3 @@ fundo.style.height = `${altura}px`;
 fundo.style.width = `${largura}px`;
 
 
-
-

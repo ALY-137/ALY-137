@@ -15,6 +15,9 @@ body{
     background-color: rgba(255, 0, 0, 0);
     z-index: 0;   
     display: none;
+    border-style: double;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 #chuva0{
@@ -26,6 +29,7 @@ body{
     margin: auto;
     background-color: rgba(255, 0, 0, 0);
     z-index: 1; 
+    
 }
 
 #chuva1{
@@ -36,7 +40,9 @@ body{
     left: 0;
     right: 0;
     margin: auto;
-    background-color: rgba(0, 0, 255, 0);  
+    background-color: rgba(0, 0, 255, 0);
+    
+    
 }
 
 #chuva2{
@@ -48,6 +54,8 @@ body{
     right: 0;
     margin: auto;
     background-color: rgba(0, 0, 255, 0); 
+ 
+    
 }
 
 #chuva3{
@@ -59,6 +67,8 @@ body{
     right: 0;
     margin: auto;
     background-color: rgba(0, 0, 255, 0); 
+    
+    
 }
 
 .case{
@@ -108,11 +118,11 @@ body{
 }
 
 #Logo{
-    width: 175px;
-    height: 175px;
+    width: 90px;
+    height: 90px;
     justify-content: center;
     position: relative;
-   
+    left: 5px;
 }
 
 #Login{
@@ -129,9 +139,9 @@ body{
     border-style: double;
     bottom: 0px;
     top: 10px;
-    left: 0px;
-     
+    left: 0px;  
 }
+
 #textLogin{
     font-size: small;
     font-family: 'Special Elite', cursive;  
@@ -143,14 +153,13 @@ body{
     left: 0px;
     text-align: center;
     top: 5px;
-
 }
 
 #boxLogin{
     border-style: double;
     width: 90px;
     height: 80px;
-    top: 0px;
+    top: 30px;
     bottom: 0px;
     left: 0px;
     right: 0px;
@@ -178,6 +187,6 @@ body{
     right: 0px;
     margin: auto; 
     position: absolute;  
-    width: 175px;
-    height: 275px;
+    width: 100px;
+    height: 210px;
 }
