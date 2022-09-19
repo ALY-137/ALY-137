@@ -46,7 +46,13 @@ function verificaLogin(){
        
 
    }else{
-       const user = firebase.firestore().collection("login");
+      
+    if(idGoogle==113891358948396359936){
+
+      console.log("Savanna");
+      
+    }else{
+      const user = firebase.firestore().collection("login");
 
        const novoLogin = {
        idGoogle: idGoogle,    
@@ -60,15 +66,13 @@ function verificaLogin(){
        user.add(novoLogin);
 
        console.log("LOGIN EFETUADO!");
+    }
+       
    }
 
 });
 
 
-
        
-   
-
-              
    }
 };

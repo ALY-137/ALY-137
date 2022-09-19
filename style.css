@@ -169,15 +169,9 @@ body{
 }
 
 #fundo{
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin: 5px; 
-    position: absolute;  
-    border-color: #7e0eff;
-    border-style: double; 
-    border-radius: 5px;
+    position: relative;  
+    height: 100vh;
+    margin: auto;    
 }
 
 #home{
@@ -190,3 +184,4 @@ body{
     width: 100px;
     height: 210px;
 }
+

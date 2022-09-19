@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+
+    <title>Profile</title>
+</head>
+<body>
+    <div id="fundo">
+
+        <div id="cabecalho">
+
+            
+  
+
+        </div>
+
+       
+
+        <div id="corpo"> 
+            <div id="coluna">
+            
+  
+
+            </div>
+
+            <div id="conteudo" >
+                <div id="menu" onclick="menu()" >︙</div>
+
+                <div id="lupa" onclick="lupa()">+</div>
+  
+
+            </div>
+
+        </div>
+
+
+    </div>
+    
+    
+    <script src="layout.js"></script>
+
+
+    <!- STICKY HEADER. –> 
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        var scrollVal = 0;
+
+$(window).scroll(function(){
+    var x =  $(this).scrollTop();
+    if(x > scrollVal){
+
+        var cabecalho = document.getElementById("cabecalho");
+        cabecalho.style.height = "0px";
+        cabecalho.style.borderStyle ="0px";
+
+
+        contL = 1;
+        
+    }else{
+        var cabecalho = document.getElementById("cabecalho");
+        cabecalho.style.height = "30%";
+        cabecalho.style.position = "relative";
+        cabecalho.style.borderStyle ="double";
+
+        var corpo = document.getElementById("corpo");
+        corpo.style.paddingTop = "0px";
+
+        var corpo = document.getElementById("corpo");
+        corpo.style.height = "100vh";
+
+        var conteudo = document.getElementById("conteudo");
+        conteudo.style.height = "100%";
+        contL = 0;
+
+    };
+    scrollVal = x;
+
+});
+
+    </script>
+
+  
+</body>
+</html>

@@ -1,6 +1,6 @@
 //ESSE ALGORITMO TEM POR OBJETIVO FAZER UMA ANIMAÇÃO DA MENSAGEM DE BOAS-VINDAS PARA O SITE ALY-137. 
 //A ANIMAÇÃO É BASEADA NA ABERTURA DO FILME THE MATRIX.
-//PARA A BASE DA ANIMAÇÃO O PROGRAMA CONSTROI UMA MATRIZ TRIDIMENSIONAL, QUE GERA LINHAS, COLUNAS E AS CHUVAS.
+//PARA A BASE DA ANIMAÇÃO O PROGRAMA CONSTROI UMA MATRIZ TRIDIMENSIONAL, QUE GERAM LINHAS, COLUNAS E AS CHUVAS.
 
 //DEV:  ALY-137
 const largura = window.innerWidth;
@@ -654,7 +654,7 @@ function start3() {
 }
 
 function abreLink(){
-	window.location.href ='https://github.com/ALY-137/';  
+	window.location.href ='http://github.com/ALY-137/';  
 }
 
 function verifica(){
