@@ -156,8 +156,7 @@ function menu(){
 }
 }
 
-
-  // FECHA MENU AO TOCAR NO CONTEÚDO
+// FECHA MENU AO TOCAR NO CONTEÚDO
 function focaCont(){
     if(contM==1){
         
@@ -168,8 +167,7 @@ function focaCont(){
         conteudo.style.width = "100%";
 
         contM=0;
-
-        }
+    }
 }
 
 
