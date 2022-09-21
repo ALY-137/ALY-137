@@ -12,7 +12,7 @@ body{
     left: 0;
     right: 0;
     margin: auto;
-    background-color: rgba(255, 0, 0, 0);
+    background-color: #07001a;
     z-index: 0;   
     display: none;
     border-style: double;
@@ -118,11 +118,15 @@ body{
 }
 
 #Logo{
-    width: 90px;
-    height: 90px;
-    justify-content: center;
-    position: relative;
-    left: 5px;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+
+    display:inline-block;
+
 }
 
 #Login{
@@ -156,32 +160,47 @@ body{
 }
 
 #boxLogin{
-    border-style: double;
     width: 90px;
     height: 80px;
-    top: 30px;
-    bottom: 0px;
+
+    position: absolute;
+    margin: auto;
     left: 0px;
     right: 0px;
-    position: relative;
-    border-radius: 5px;
-    margin: auto;
+    bottom: 0px;   
+
+    padding: 10px;
+
+    background-color: #07001a;  
+    border: 1px solid #7e0eff;
 }
 
 #fundo{
-    position: relative;  
-    height: 100vh;
-    margin: auto;    
+    position: absolute; /* ABOLUTE PARA FICAR DIV FICAR CENTRALIZADA */
+    margin: auto;  
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    
+    background-color: #1b006735;
+    border: 1px solid #7e0eff;
+    
+    /* CENTRALIZA CONTEÚDO */
+    display: flex;
+    align-items: center ;
 }
 
 #home{
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin: auto; 
-    position: absolute;  
-    width: 100px;
-    height: 210px;
+   
+    position: relative; /* home DEVE SER RELATIVE PARA CENTRALIZAR logo E boxLogin */
+    margin: auto;
+    width: 200px;
+    height: 300px;
+
+   
+    
+
+  
 }
 

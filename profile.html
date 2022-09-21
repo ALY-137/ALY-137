@@ -10,34 +10,26 @@
 
     <title>Profile</title>
 </head>
-<body>
+<body onload="profile()">
     <div id="fundo">
 
         <div id="cabecalho">
 
-            
-  
+            <div id="menu" onclick="menu()" >︙</div>
 
         </div>
-
-       
-
-        <div id="corpo"> 
             <div id="coluna">
-            
-  
+                      
+           
 
             </div>
 
-            <div id="conteudo" >
-                <div id="menu" onclick="menu()" >︙</div>
-
-                <div id="lupa" onclick="lupa()">+</div>
+        <div id="conteudo" >
+           
   
-
-            </div>
 
         </div>
+
 
 
     </div>
@@ -57,26 +49,17 @@ $(window).scroll(function(){
     if(x > scrollVal){
 
         var cabecalho = document.getElementById("cabecalho");
-        cabecalho.style.height = "0px";
-        cabecalho.style.borderStyle ="0px";
+        cabecalho.style.display = "none";
+        
 
 
         contL = 1;
         
     }else{
         var cabecalho = document.getElementById("cabecalho");
-        cabecalho.style.height = "30%";
-        cabecalho.style.position = "relative";
-        cabecalho.style.borderStyle ="double";
+        cabecalho.style.display = "block";
+        
 
-        var corpo = document.getElementById("corpo");
-        corpo.style.paddingTop = "0px";
-
-        var corpo = document.getElementById("corpo");
-        corpo.style.height = "100vh";
-
-        var conteudo = document.getElementById("conteudo");
-        conteudo.style.height = "100%";
         contL = 0;
 
     };
