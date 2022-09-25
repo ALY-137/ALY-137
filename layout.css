@@ -60,11 +60,22 @@
 
 #rodape{
     height: 20px;
+    font-size: 15px;
     background-color: #1b0067;
     position: absolute;  
     z-index: 12;
     transition: all ease 0.5s;
     border: 1px solid #7e0eff;
     bottom: -1px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+#logoRod{
+    width: 17px;
+    height: 17px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
