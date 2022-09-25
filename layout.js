@@ -2,15 +2,28 @@ const larSreen = window.innerWidth;
 const altSreen = window.innerHeight;
 
 
+
 function profile(){
 
     var fundo = document.getElementById('fundo');
     fundo.style.display = `block`;
 
+    var cabecalho = document.getElementById('cabecalho');
+    cabecalho.style.display = `block`;
+
+    var conteudo = document.getElementById('conteudo');
+    conteudo.style.height = `${altSreen-90}px`;
+
+    var coluna = document.getElementById('coluna');
+    coluna.style.height = `${altSreen-90}px`;
+
+    
 }
 
 var fundo = document.getElementById('fundo');
     fundo.style.height = `${altSreen-20}px`;
+
+    
 
 
 if(larSreen<822){
@@ -20,12 +33,22 @@ if(larSreen<822){
     var cabecalho = document.getElementById('cabecalho');
     cabecalho.style.width = `${larSreen-20}px`;
 
+    var rodape = document.getElementById('rodape');
+    rodape.style.width = `${larSreen-20}px`;
+
+
+
 }else{
     var fundo = document.getElementById('fundo');
     fundo.style.width = '822px';
  
     var cabecalho = document.getElementById('cabecalho');
     cabecalho.style.width = '822px';
+
+    var rodape = document.getElementById('rodape');
+    rodape.style.width = `822px`;
+
+
 }
 
 var contL=0;
@@ -43,7 +66,6 @@ function menu(){
         if(larSreen < 600){
         var coluna = document.getElementById("coluna");
         coluna.style.width = "80%";
-        coluna.style.height = "100%";
         coluna.style.border ="1px solid #7e0eff";
         
     
@@ -56,7 +78,6 @@ function menu(){
         //PC
     var coluna = document.getElementById("coluna");
     coluna.style.width = "30%";
-    coluna.style.height = "100%";
     coluna.style.border ="1px solid #7e0eff";
     
 
