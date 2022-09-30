@@ -638,6 +638,7 @@ async function anima3() {
 
                      var Matrix = document.getElementById("Matrix");
                      Matrix.style.height = "0px";
+                     Matrix.style.padding = "0px";
                  }
   
             }
@@ -663,7 +664,7 @@ function start3() {
 }
 
 function abreLink(){
-	window.location.href ='http://www.aly-137.com/profile.html';  
+	window.location.href ='http://localhost:5500/profile.html';  
 }
 
 function verifica(){
