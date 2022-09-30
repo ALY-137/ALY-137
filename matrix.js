@@ -85,6 +85,10 @@ var tomaAzul = 0;
 
 function tomaPilulaVioleta(){
 
+    var Matrix = document.getElementById("Matrix");
+    Matrix.style.border ="1px solid #7e0eff";
+    Matrix.style.backgroundColor = "#07001a";
+
     tomaVioleta = 1;
     numLin = 8;
     
@@ -629,6 +633,11 @@ async function anima3() {
                  conta = conta+1;
                  if(conta==1){
                      abreLink();
+                     var fundo = document.getElementById("fundo");
+                     fundo.style.height = "0px";
+
+                     var Matrix = document.getElementById("Matrix");
+                     Matrix.style.height = "0px";
                  }
   
             }
@@ -654,7 +663,7 @@ function start3() {
 }
 
 function abreLink(){
-	window.location.href ='http://github.com/ALY-137/';  
+	window.location.href ='http://www.aly-137.com/profile.html';  
 }
 
 function verifica(){

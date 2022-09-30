@@ -33,6 +33,7 @@ function verificaLogin(){
    
    if(verificacao=="true"){ 
 
+
        let bd = firebase.firestore();
        let data = new Date();
        
@@ -52,6 +53,8 @@ function verificaLogin(){
       console.log("Savanna");
       
     }else{
+
+      
       const user = firebase.firestore().collection("login");
 
        const novoLogin = {

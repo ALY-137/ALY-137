@@ -6,6 +6,9 @@
     transition: all ease 0.5s;
     border: 1px solid #7e0eff;
     display: none;
+    align-items: center;
+    justify-content:space-between;
+   
 }
 
 #menu{
@@ -27,20 +30,22 @@
 #coluna{
     width: 0px;
     height: 0px;
-    
     background-color:#1b006735;
     transition: all ease 0.5s;
-    z-index: 10;
+    z-index: 14;
     position: absolute;
     backdrop-filter: blur(2px);
     margin-top: 50px;
+  
+
+    
     
 }
 
 #conteudo{
     width: 100%;
-    height: 100%;
-    background-color:#1b006735;  
+    height: 0px;
+    background-color:#11003e;  
   
     border: 1px solid #7e0eff;
     z-index: 9;
@@ -60,22 +65,84 @@
 
 #rodape{
     height: 20px;
-    font-size: 15px;
+    font-size: 12px;
     background-color: #1b0067;
     position: absolute;  
-    z-index: 12;
+    z-index: 16;
     transition: all ease 0.5s;
     border: 1px solid #7e0eff;
     bottom: -1px;
     display: flex;
     align-items: center;
     justify-content: center;
-  
 }
 
 #logoRod{
     width: 17px;
     height: 17px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 5px;
+}
+
+#imgPerfil{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    border: 1px solid #7e0eff;
+    margin-left: 10px;
+}
+
+
+
+.optionsMenu{
+    height: 30px;
+    width: 100%;
+    border: 1px solid #7e0eff;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.optionsMenuFocos{
+    height: 60px;
+    width: 100%;
+    border: 1px solid #7e0eff;
+    border-right: none;
+    border-left: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#abas{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    z-index: 13;
+    margin: auto;
+    bottom: -1px;
+    
+}
+
+.optionsAbas{
+    height: 30px;
+    width: 31%;
+    border: 1px solid #7e0eff;
+    margin: auto;
+    margin-bottom: 0px;
+    border-bottom: none;
+    background-color: #170055 ;
+}
+
+.optionsAbasFoco{
+    background-color: #11003e;
+    height: 40px;
+    width: 31%;
+    border: 1px solid #7e0eff;
+    margin: auto;
+    margin-bottom: -1px;
+    border-bottom: none;
 }

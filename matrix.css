@@ -12,12 +12,11 @@ body{
     left: 0;
     right: 0;
     margin: auto;
-    background-color: #07001a;
     z-index: 0;   
-    display: none;
-    border-style: double;
-    border-radius: 5px;
+    transition: all ease 0.5s;
     padding: 10px;
+    height: 0px;
+    width: 0px;
 }
 
 #chuva0{
@@ -144,6 +143,7 @@ body{
     bottom: 0px;
     top: 10px;
     left: 0px;  
+    
 }
 
 #textLogin{
@@ -176,6 +176,9 @@ body{
 }
 
 #fundo{
+    height: 0px;
+    transition: all ease 0.5s;
+
     position: absolute; /* ABOLUTE PARA FICAR DIV FICAR CENTRALIZADA */
     margin: auto;  
     top:0px;
@@ -197,10 +200,5 @@ body{
     margin: auto;
     width: 200px;
     height: 300px;
-
-   
-    
-
-  
 }
 
