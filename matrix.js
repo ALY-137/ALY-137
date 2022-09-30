@@ -664,7 +664,8 @@ function start3() {
 }
 
 function abreLink(){
-	window.location.href ='http://localhost:5500/profile.html';  
+	// window.location.href ='http://localhost:5500/profile.html';  
+    window.location.href ='http://www.aly-137.com/profile.html';  
 }
 
 function verifica(){
