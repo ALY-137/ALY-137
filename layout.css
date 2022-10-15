@@ -52,6 +52,7 @@
     position: absolute;
     overflow-y:hidden;
     margin-top: 50px;
+    overflow-x: hidden;
   
 }
 ::-webkit-scrollbar{
@@ -165,7 +166,7 @@
     height: 0px;
     transition: all ease 0.5s;
 
-    position: absolute; /* ABOLUTE PARA FICAR DIV FICAR CENTRALIZADA */
+    position: absolute; /* ABSOLUTE PARA DIV FICAR CENTRALIZADA */
     margin: auto;  
     top:0px;
     bottom:0px;
@@ -183,12 +184,21 @@
 #cardProfile{
     
     border: 1px solid #7e0eff;
-    margin: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+
+    position: absolute;
+    margin: auto;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+
     background-image:url(imagens/photo.jpg);
     background-size: 600px;
     background-repeat: no-repeat;
-    background-position: 50%;
+    background-position: 52%;
+    
+    
+    
+    
 
 }

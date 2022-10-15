@@ -17,11 +17,8 @@ function profile(){
     var coluna = document.getElementById('coluna');
     coluna.style.height = `${altSreen-90}px`;
 
-    var cardProfile = document.getElementById("cardProfile");
-    cardProfile.style.height = `${altSreen-130}px`;
-    
+    ALY137();
 
- 
     
 }
 
@@ -29,6 +26,17 @@ var fundo = document.getElementById('fundo');
     fundo.style.height = `${altSreen-20}px`;
 
     
+
+function ALY137(){
+
+    var alyAlt = altSreen-137;
+    var alyLar = alyAlt/1.618;
+
+    var cardProfile = document.getElementById("cardProfile");
+    cardProfile.style.height = `${alyAlt}px`;
+    cardProfile.style.width = `${alyLar}px`;
+
+}
 
 
 if(larSreen<822){
@@ -42,14 +50,15 @@ if(larSreen<822){
     rodape.style.width = `${larSreen-20}px`;
 
     var abas = document.getElementById("abas");
-    abas.style.width = "80%";    
-
+    abas.style.width = "80%";   
+    
+ 
 
 
 }else{
     var fundo = document.getElementById('fundo');
     fundo.style.width = '822px';
- 
+
     var cabecalho = document.getElementById('cabecalho');
     cabecalho.style.width = '822px';
 
@@ -59,10 +68,7 @@ if(larSreen<822){
     var abas = document.getElementById("abas");
     abas.style.width = "50%";
 
-    var cardProfile = document.getElementById("cardProfile");
-    cardProfile.style.width = `400px`;
-    cardProfile.style.marginLeft = `auto`;
-    cardProfile.style.marginRight = `auto`;
+    
 
 
 
