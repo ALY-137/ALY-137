@@ -17,9 +17,11 @@ function profile(){
     var coluna = document.getElementById('coluna');
     coluna.style.height = `${altSreen-90}px`;
 
+    var cardProfile = document.getElementById("cardProfile");
+    cardProfile.style.height = `${altSreen-130}px`;
+    
 
-
-
+ 
     
 }
 
@@ -40,7 +42,7 @@ if(larSreen<822){
     rodape.style.width = `${larSreen-20}px`;
 
     var abas = document.getElementById("abas");
-    abas.style.width = "80%";
+    abas.style.width = "80%";    
 
 
 
@@ -56,6 +58,12 @@ if(larSreen<822){
 
     var abas = document.getElementById("abas");
     abas.style.width = "50%";
+
+    var cardProfile = document.getElementById("cardProfile");
+    cardProfile.style.width = `400px`;
+    cardProfile.style.marginLeft = `auto`;
+    cardProfile.style.marginRight = `auto`;
+
 
 
 }
@@ -151,6 +159,12 @@ function abas1(){
         aba = document.getElementById('aba3');
         aba.classList.remove('optionsAbasFoco');
         aba.classList.add('optionsAbas');
+
+        var conteudo = document.getElementById('conteudo');
+        conteudo.style.overflowY = "hidden";
+
+        var cardProfile = document.getElementById("cardProfile");
+        cardProfile.style.display = `block`;
         
         contA1 = 1;
         contA2 = 0;
@@ -179,6 +193,13 @@ function abas2(){
         aba = document.getElementById('aba3');
         aba.classList.remove('optionsAbasFoco');
         aba.classList.add('optionsAbas');
+
+        var conteudo = document.getElementById('conteudo');
+        conteudo.style.overflowY = "scroll";
+
+        
+    var cardProfile = document.getElementById("cardProfile");
+    cardProfile.style.display = `none`;
         
         contA2 = 1;
         contA1 = 0;
@@ -207,6 +228,12 @@ function abas3(){
         aba = document.getElementById('aba2');
         aba.classList.remove('optionsAbasFoco');
         aba.classList.add('optionsAbas');
+
+        var conteudo = document.getElementById('conteudo');
+        conteudo.style.overflowY = "scroll";
+
+        var cardProfile = document.getElementById("cardProfile");
+        cardProfile.style.display = `none`;
 
         contA3 = 1;
         contA1 = 0;
@@ -237,7 +264,6 @@ function fechaAbas(){
     }
 
 }
-
 
 
 

@@ -133,18 +133,6 @@ body{
     display: none;
 }
 
-#buttonDiv{ 
-    position: relative;
-    margin: auto;
-    height: 31px;
-    width: 31px;
-    border-color: #7e0eff;
-    border-style: double;
-    bottom: 0px;
-    top: 10px;
-    left: 0px;  
-    
-}
 
 #textLogin{
     font-size: small;
@@ -175,24 +163,7 @@ body{
     border: 1px solid #7e0eff;
 }
 
-#fundo{
-    height: 0px;
-    transition: all ease 0.5s;
 
-    position: absolute; /* ABOLUTE PARA FICAR DIV FICAR CENTRALIZADA */
-    margin: auto;  
-    top:0px;
-    bottom:0px;
-    left:0px;
-    right:0px;
-    
-    background-color: #1b006735;
-    border: 1px solid #7e0eff;
-    
-    /* CENTRALIZA CONTEÚDO */
-    display: flex;
-    align-items: center ;
-}
 
 #home{
    

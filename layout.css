@@ -50,7 +50,7 @@
     border: 1px solid #7e0eff;
     z-index: 9;
     position: absolute;
-    overflow-y: scroll;
+    overflow-y:hidden;
     margin-top: 50px;
   
 }
@@ -89,6 +89,7 @@
     border-radius: 50px;
     border: 1px solid #7e0eff;
     margin-left: 10px;
+    display: none;
 }
 
 
@@ -145,4 +146,49 @@
     margin: auto;
     margin-bottom: -1px;
     border-bottom: none;
+}
+
+.buttonGoogle{ 
+    position: relative;
+    margin: auto;
+    height: 31px;
+    width: 31px;
+    border-color: #7e0eff;
+    border-style: double;
+    bottom: 0px;
+    top: 10px;
+    left: 0px;  
+    
+}
+
+#fundo{
+    height: 0px;
+    transition: all ease 0.5s;
+
+    position: absolute; /* ABOLUTE PARA FICAR DIV FICAR CENTRALIZADA */
+    margin: auto;  
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    
+    background-color: #1b006735;
+    border: 1px solid #7e0eff;
+    
+    /* CENTRALIZA CONTEÚDO */
+    display: flex;
+    align-items: center ;
+}
+
+#cardProfile{
+    
+    border: 1px solid #7e0eff;
+    margin: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image:url(imagens/photo.jpg);
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+
 }
