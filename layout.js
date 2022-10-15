@@ -2,7 +2,6 @@ const larSreen = window.innerWidth;
 const altSreen = window.innerHeight;
 
 
-
 function profile(){
 
     var fundo = document.getElementById('fundo');
@@ -19,13 +18,10 @@ function profile(){
 
     ALY137();
 
-    
 }
 
 var fundo = document.getElementById('fundo');
     fundo.style.height = `${altSreen-20}px`;
-
-    
 
 function ALY137(){
 
@@ -39,7 +35,8 @@ function ALY137(){
 }
 
 
-if(larSreen<822){
+
+
     var fundo = document.getElementById('fundo');
     fundo.style.width = `${larSreen-20}px`;
 
@@ -51,33 +48,10 @@ if(larSreen<822){
 
     var abas = document.getElementById("abas");
     abas.style.width = "80%";   
-    
- 
 
-
-}else{
-    var fundo = document.getElementById('fundo');
-    fundo.style.width = '822px';
-
-    var cabecalho = document.getElementById('cabecalho');
-    cabecalho.style.width = '822px';
-
-    var rodape = document.getElementById('rodape');
-    rodape.style.width = `822px`;
-
-    var abas = document.getElementById("abas");
-    abas.style.width = "50%";
-
-    
-
-
-
-}
 
 var contL=0;
 var contM=0;
-
-
 
 function menu(){
 
@@ -92,16 +66,7 @@ function menu(){
         coluna.style.border ="1px solid #7e0eff";
         coluna.style.display ="block";
 
-
-
-
-
-     
-
-    
-
         contM=1;
-
 
     }else{
         //ABRE MENU
@@ -110,9 +75,6 @@ function menu(){
     coluna.style.width = "30%";
     coluna.style.border ="1px solid #7e0eff";
     coluna.style.display ="block";
-
-    
-
 
     contM=1;
 
