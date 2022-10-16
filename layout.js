@@ -16,6 +16,11 @@ function profile(){
     var coluna = document.getElementById('coluna');
     coluna.style.height = `${altSreen-90}px`;
 
+
+ 
+
+
+
     ALY137();
 
 }
@@ -23,7 +28,13 @@ function profile(){
 var fundo = document.getElementById('fundo');
     fundo.style.height = `${altSreen-20}px`;
 
+
+
+
+
 function ALY137(){
+
+    //REDIMENCIONA CARD 
 
     var alyAlt = altSreen-137;
     var alyLar = alyAlt/1.618;
@@ -31,6 +42,36 @@ function ALY137(){
     var cardProfile = document.getElementById("cardProfile");
     cardProfile.style.height = `${alyAlt}px`;
     cardProfile.style.width = `${alyLar}px`;
+
+    //REDIMENCIONA ABAS
+
+    if(larSreen<800){
+
+       alyLar = larSreen - 40;
+
+    var aureaLar = alyLar/1.618;
+   
+    console.log(aureaLar);
+
+    var abas = document.getElementById("abas");
+    abas.style.width = `${aureaLar}px`; 
+    }else{
+
+        alyLar = larSreen - 40;
+
+        var aureaLar = alyLar/1.618;
+        var aureaAbas = alyLar - aureaLar;
+   
+        console.log(aureaLar);
+
+        var abas = document.getElementById("abas");
+        abas.style.width = `${aureaAbas}px`; 
+
+    }
+
+    
+    
+    
 
 }
 

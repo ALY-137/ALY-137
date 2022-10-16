@@ -46,6 +46,7 @@
     width: 100%;
     height: 0px;
     background-color:#11003e;  
+    transition: all ease 1s;
   
     border: 1px solid #7e0eff;
     z-index: 9;
@@ -125,28 +126,33 @@
     justify-content: center;
     z-index: 13;
     margin: auto;
-    bottom: -1px;
-    
+    bottom: -1px;    
 }
 
 .optionsAbas{
     height: 30px;
-    width: 31%;
+    width: 25%;
     border: 1px solid #7e0eff;
     margin: auto;
     margin-bottom: 0px;
     border-bottom: none;
     background-color: #170055 ;
+    margin-left: 2px;
+    margin-right: 2px;
+    transition: all ease 0.5s;
 }
 
 .optionsAbasFoco{
     background-color: #11003e;
     height: 40px;
-    width: 31%;
+    width: 50%;
     border: 1px solid #7e0eff;
     margin: auto;
     margin-bottom: -1px;
     border-bottom: none;
+    margin-left: 2px;
+    margin-right: 2px;
+    transition: all ease 0.5s;
 }
 
 .buttonGoogle{ 
@@ -163,16 +169,15 @@
 }
 
 #fundo{
+
     height: 0px;
     transition: all ease 0.5s;
-
     position: absolute; /* ABSOLUTE PARA DIV FICAR CENTRALIZADA */
     margin: auto;  
     top:0px;
     bottom:0px;
     left:0px;
     right:0px;
-    
     background-color: #1b006735;
     border: 1px solid #7e0eff;
     
@@ -184,21 +189,16 @@
 #cardProfile{
     
     border: 1px solid #7e0eff;
-
     position: absolute;
     margin: auto;
     top:0px;
     bottom:0px;
     left:0px;
     right:0px;
-
+    height: 0px;
     background-image:url(imagens/photo.jpg);
     background-size: 600px;
     background-repeat: no-repeat;
     background-position: 52%;
-    
-    
-    
-    
-
+    transition: all ease 2.5s;
 }
