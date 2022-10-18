@@ -45,7 +45,7 @@ function ALY137(){
 
     //REDIMENCIONA ABAS
 
-    if(larSreen<800){
+    if(larSreen<800){// MOBILE
 
        alyLar = larSreen - 40;
 
@@ -55,7 +55,7 @@ function ALY137(){
 
     var abas = document.getElementById("abas");
     abas.style.width = `${aureaLar}px`; 
-    }else{
+    }else{ //DESKTOP
 
         alyLar = larSreen - 40;
 

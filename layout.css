@@ -184,6 +184,7 @@
     /* CENTRALIZA CONTEÚDO */
     display: flex;
     align-items: center ;
+
 }
 
 #cardProfile{
@@ -201,4 +202,15 @@
     background-repeat: no-repeat;
     background-position: 52%;
     transition: all ease 2.5s;
+}
+
+#cardName{
+    text-align: center;
+    position: relative;
+    top:80%;
+    font-family: 'Special Elite', cursive; 
+    background-color: #11003e7e;
+    padding: 5px; 
+   
+    
 }
