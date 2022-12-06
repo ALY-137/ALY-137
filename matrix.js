@@ -47,7 +47,7 @@ var sequenciaemVChuva0 = [];
 var guarda = 0;
 //Essa variável guarda o valor da primeira posição da sequência.
 
-const MensBV = ["B","O","A","S","-","V","I","N","D","A","S"];
+const MensBV = ["S","A","V","A","N","N","A"];
 var numMensBV = MensBV.length;
 const mensagem0 = [];
 const sequenciaemV = [];
@@ -80,20 +80,19 @@ const wait = ms => new Promise(resolve => setInterval(resolve, ms));
 let espera = null;
 var prox0 = 0;
 
-var tomaVioleta = 0;
 var tomaAzul = 0;
 
-function tomaPilulaVioleta(){
 
-    var Matrix = document.getElementById("Matrix");
-    Matrix.style.border ="1px solid #7e0eff";
-    Matrix.style.backgroundColor = "#07001a";
+function tomaPilulaAzul(altura,largura){
 
-    tomaVioleta = 1;
-    numLin = 8;
     
-    if(numCol>13){
-        numCol = 13;
+
+    tomaAzul = 1;
+
+    numLin = Math.trunc((altura) / 20);
+    numCol = Math.trunc(((largura) / 20));
+    if(numCol%2==0){
+       numCol = numCol -1;
     }
     //Limita número de linhas e colunas.
     //A fim de obter uma centralização perfeita para a frase de BOAS-VINDAS o número de colunas passa a ser impar.
@@ -348,9 +347,12 @@ async function anima0() {
 
 function enviaNome(){ 
 
-    var nomeGoogle = document.getElementById('given_name');
-    nome = nomeGoogle.textContent;
-    nome = nome.toUpperCase();
+    // var nomeGoogle = document.getElementById('given_name');
+    //nome = nomeGoogle.textContent;
+
+    nome = "Passarela";
+
+    nome = nome.toUpperCase(); // DEIXA NOME SEMPRE EM MAIÚSCULO
     numNome = nome.length;
     MensBVNome = nome.split('');
     
@@ -453,7 +455,7 @@ async function anima1() {
         if (temporizadorI1[j] > numLin + numLin/2){
             prox1 += 1;
             if (prox1 == 1){
-                if(tomaVioleta==1){
+                if(tomaAzul==1){
                     start2();
                     start3();
                 }else{
@@ -620,27 +622,18 @@ async function anima3() {
 
             temporizadorF3[j] += 1;
 
-            if (temporizadorF3[j] > (numLin/2) * 12) {
+            if (temporizadorF3[j] > (numLin/2) * 3) {
                 clearInterval(tempAnima3);
+
+
+                var recebe = document.getElementById("chuva2");
+                recebe.style.marginTop = "60%";
+                var recebe = document.getElementById("chuva3");
+                recebe.style.marginTop = "60%";
+
                 
                 
-                var some = document.getElementById('chuva3');
-                some.style.display = "none";
-
-                var some = document.getElementById('chuva2');
-                some.style.display = "none";
-
-                 conta = conta+1;
-                 if(conta==1){
-                     abreLink();
-                     var fundo = document.getElementById("fundo");
-                     fundo.style.height = "0px";
-
-                     var Matrix = document.getElementById("Matrix");
-                     Matrix.style.height = "0px";
-                     Matrix.style.padding = "0px";
-                     Matrix.style.width = "0px";
-                 }
+                
   
             }
 
@@ -665,8 +658,8 @@ function start3() {
 }
 
 function abreLink(){
-	//window.location.href ='http://localhost:5500/SavannaPassarela.html';  
-    window.location.href ='http://www.aly-137.com/SavannaPassarela.html';  
+	window.location.href ='http://localhost:5500/SavannaPassarela.html';  
+    //window.location.href ='http://www.aly-137.com/SavannaPassarela.html';  
 }
 
 function verifica(){

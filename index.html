@@ -4,105 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="d_nLgslkknae5Ek6IyMenrVCv4gFn3CZUNGmCbizA9s" />
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="matrix.css">
+
+ 
     <link rel="stylesheet" href="layout.css">
+ 
 
     <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
-    
-    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-firestore.js"></script>
-   
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
-    <script src="https://unpkg.com/jwt-decode/build/jwt-decode.js"></script>
-     
-    <script>
-    function handleCredentialResponse(response) {
-    const data = jwt_decode(response.credential)
 
-    fullName.textContent = data.name
-    sub.textContent = data.sub
-    given_name.textContent = data.given_name
-    family_name.textContent = data.family_name
-    email.textContent = data.email
-    verifiedEmail.textContent = data.email_verified
-    picture.setAttribute("src", data.picture)
-  }
-  window.onload = function () {
-    google.accounts.id.initialize({
-      client_id: "99960275074-f5d0bnogv6a9oq1ui4pkrbou60ffh43f.apps.googleusercontent.com",
-      callback: handleCredentialResponse
-    });
-    google.accounts.id.renderButton(
-      document.getElementById("buttonDiv"),
-      { theme: "outline", 
-      size: "medium",
-      type:"icon",
-      shape:"retangular",
-      text:"$ {button.text}",
-      locale:"pt-BR"
-     }  
-    );
-    google.accounts.id.prompt(); 
-  }
-    </script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SKZPZBV44Z"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-SKZPZBV44Z');
-    </script>
-
-    
     <title>ALY-137</title>
 </head>
-<body>
-    <div id="Login">
-        
-        <p id="fullName"></p>
-        <p id="sub"></p>
-        <p id="given_name"></p>
-        <p id="family_name"></p>
-        <p id="email"></p>
-        <p id="verifiedEmail"></p>
-        <img onload="verificaLogin(),verifica()" id="picture" />
-
-    </div>
-
-    
+<body onload="profile()">
     <div id="fundo">
+   
+          
 
-        <div id="home">
 
-          <img src="logo.png" id="Logo">
-      
-          <div id="boxLogin">
-              <p id="textLogin">INICIAR COM <br> GOOGLE</p>
-              <div class="buttonGoogle" id="buttonDiv"></div>
-          </div>
 
-        </div>
+<div id="conteudo" onclick="fechaMenu()">
+<div id="cardProfile">
+    <img src="imagens/busto.png" id="imgBusto">     
+    <img src="imagens/note.png" id="imgNote">  
+    <div id="Matrix">  </div>
+         
+            </div>
+    
 
-        </div>
+            <div id="conteudoAbas">
+
+                        <div id="cabecalho">
+
+                                    <div id="abas">
+                                        <div onclick="abas2()" class="optionsAbas" id="aba2"></div>
+                                        <div onclick="abas1()" class="optionsAbasFoco" id="aba1">
+                                        <img src="logo.png" id="logoAba"></div>
+                                        <div onclick="abas3()" class="optionsAbas" id="aba3"></div>
+                                        
+                                    </div>
+
+                        </div>
+
+            </div>
+
 
     </div>
-    
-    <div id="Matrix"></div>
-    
-    <script src="matrix.js"></script>
-    <script src="app.js"></script>
+
+    <div id="rodape">
+       
+        <img src="logo.png" id="logoRod">
+        <p>© ALY-137</p>
+        
+
+       </div>
+       
+  </div>   
     <script src="layout.js"></script>
+    <script src="app.js"></script>
+    <script src="matrix.js"></script>
     
- 
-    
+
+
+   
+
+  
 </body>
 </html>

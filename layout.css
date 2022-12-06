@@ -1,60 +1,31 @@
 #cabecalho{
-    height: 50px;
-    background-color: #1b0067;
-    position: absolute;  
-    z-index: 11;
+    height: 40px;
+    background-color: #07001a;
+    position: relative;  
+    z-index: 20;
     transition: all ease 0.5s;
-    border: 1px solid #7e0eff;
+    border-top: 1px solid #7e0eff00;
+    border-bottom: 1px solid #7e0eff;
     display: none;
     align-items: center;
-    justify-content:space-between;
+    justify-content:space-between; 
+    margin-top: -1px;
    
 }
 
-#menu{
-    width: 45px;
-    height: 45px;
-    background-color:#1b006735;
-    float: left;
-    position: sticky;
-    top:0px;
-    border-color: #7e0eff;
-    border-style: double;  
-    font-size: 38px;
-    text-align: center;
-    margin-right: 5px;
-}
-
-
-
-#coluna{
-    width: 0px;
-    height: 0px;
-    background-color:#1b006735;
-    transition: all ease 0.5s;
-    z-index: 14;
-    position: absolute;
-    backdrop-filter: blur(2px);
-    margin-top: 50px;
-  
-
-    
-    
-}
 
 #conteudo{
-    width: 100%;
     height: 0px;
-    background-color:#11003e;  
+    background-color: #03000d;
     transition: all ease 1s;
-  
-    border: 1px solid #7e0eff;
-    z-index: 9;
-    position: absolute;
-    overflow-y:hidden;
-    margin-top: 50px;
+    border-top:none;
+    border-bottom: 1px solid #7e0eff;
+    display: block;
+   
+    position: relative;
+    overflow-y:hidden; 
     overflow-x: hidden;
-  
+    margin-top: 0px;
 }
 ::-webkit-scrollbar{
     background-color: #1b0067;
@@ -69,11 +40,13 @@
     height: 20px;
     font-size: 12px;
     background-color: #1b0067;
-    position: absolute;  
+    position: relative;  
     z-index: 16;
     transition: all ease 0.5s;
     border: 1px solid #7e0eff;
-    bottom: -1px;
+    
+    position: relative;
+    bottom: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,63 +69,40 @@
 
 
 
-.optionsMenu{
-    height: 30px;
-    width: 100%;
-    border: 1px solid #7e0eff;
-    border-right: none;
-    border-left: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.optionsMenuFocos{
-    height: 60px;
-    width: 100%;
-    border: 1px solid #7e0eff;
-    border-right: none;
-    border-left: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 
 #abas{
-    height: 50px;
+    width: 100%;
+    height: 40px;
     display: flex;
     justify-content: center;
-    z-index: 13;
+    z-index: 25;
     margin: auto;
     bottom: -1px;    
 }
 
 .optionsAbas{
-    height: 30px;
-    width: 25%;
+    height: 39px;
+    width: 50%;
     border: 1px solid #7e0eff;
     margin: auto;
     margin-bottom: 0px;
     border-bottom: none;
-    background-color: #170055 ;
-    margin-left: 2px;
-    margin-right: 2px;
+    background-color: #11003e;
     transition: all ease 0.5s;
+    z-index: 25;
 }
 
 .optionsAbasFoco{
-    background-color: #11003e;
+    background-color: #080020 ;
     height: 40px;
     width: 50%;
     border: 1px solid #7e0eff;
     margin: auto;
     margin-bottom: -1px;
     border-bottom: none;
-    margin-left: 2px;
-    margin-right: 2px;
     transition: all ease 0.5s;
+    z-index: 25;
 }
 
 .buttonGoogle{ 
@@ -178,30 +128,63 @@
     bottom:0px;
     left:0px;
     right:0px;
-    background-color: #1b006735;
+    background-color: #07001a;
     border: 1px solid #7e0eff;
     
     /* CENTRALIZA CONTEÚDO */
     display: flex;
     align-items: center ;
 
+    overflow-x: hidden;
+
+
 }
 
 #cardProfile{
     
-    border: 1px solid #7e0eff;
-    position: absolute;
+
+    position: relative;
     margin: auto;
     top:0px;
     bottom:0px;
     left:0px;
     right:0px;
     height: 0px;
-    background-image:url(imagens/photo.jpg);
-    background-size: 600px;
+    
     background-repeat: no-repeat;
     background-position: 52%;
     transition: all ease 2.5s;
+    padding: 0px;
+    
+   
+}
+
+#imgBusto{
+    
+   height: 100%;
+    
+    z-index: 3;
+    position: absolute;
+    margin: auto;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    
+}
+
+#imgNote{
+    z-index: 4;
+
+    height: 100%;
+    
+
+    position: absolute;
+    margin: auto;
+    right: 0px;
+    left: -100px;
+    bottom: 0px;
+
+
 }
 
 #cardName{
@@ -212,5 +195,199 @@
     background-color: #11003e7e;
     padding: 5px; 
    
+}
+
+#logoAba{
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    position: absolute;
+   
+}
+
+body{
+    margin: auto;
+    padding: auto;
+    background-color: #07001a ;    
+    color: #7e0eff;  
+}
+
+/* MATRIX */
+
+#Matrix{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all ease 0.5s;
+    padding: 0px;
+    height: 0px;
+    width: 0px;
+   
+}
+
+#chuva0{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(255, 0, 0, 0);
+    z-index: 1; 
     
 }
+
+#chuva1{
+    position: absolute;
+    z-index: 2;    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 255, 0);
+    
+    
+}
+
+#chuva2{
+    position: absolute;
+    z-index: 6;    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 255, 0); 
+    transition: all ease 2.5s;
+    margin-top: 0px;
+
+ 
+    
+}
+
+#chuva3{
+    position: absolute;
+    z-index: 5;    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 255, 0); 
+    transition: all ease 2.5s;
+    margin-top: 0px;
+    
+    
+}
+
+.case{
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    margin-top: -4px;    
+}
+
+#nums{ 
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Special Elite', cursive;  
+}
+
+.numOff{
+    color: #7e0eff00;
+}
+
+.numNeutro{
+    color: #b16efd28;
+    text-shadow:
+    0 0 1px #7e0eff5f,
+    0 0 2px #7e0eff5f,
+    0 0 3px #7e0eff5f,
+    0 0 4px #7e0eff5f,
+    0 0 5px #7e0eff5f,
+    0 0 6px #7e0eff5f,
+    0 0 7px #7e0eff5f,
+    0 0 8px #7e0eff5f;
+}
+
+.numBrilha{
+    color: #e8d4ff;
+    text-shadow:
+    0 0 1px #7e0eff,
+    0 0 2px #7e0eff,
+    0 0 3px #7e0eff,
+    0 0 4px #7e0eff,
+    0 0 5px #7e0eff,
+    0 0 6px #7e0eff,
+    0 0 7px #7e0eff,
+    0 0 8px #7e0eff;
+}
+
+#Logo{
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+
+    display:inline-block;
+
+}
+
+#Login{
+  
+    display: none;
+}
+
+
+#textLogin{
+    font-size: small;
+    font-family: 'Special Elite', cursive;  
+    position: relative; 
+    color: #7e0eff;
+    margin: auto;
+    padding: auto;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    top: 5px;
+}
+
+#boxLogin{
+    width: 90px;
+    height: 80px;
+
+    position: absolute;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;   
+
+    padding: 10px;
+
+    background-color: #07001a;  
+    border: 1px solid #7e0eff;
+}
+
+
+
+#home{
+   
+    position: relative; /* home DEVE SER RELATIVE PARA CENTRALIZAR logo E boxLogin */
+    margin: auto;
+    width: 200px;
+    height: 300px;
+}
+
