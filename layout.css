@@ -172,6 +172,44 @@
     bottom: 0px;
     
 }
+#imgBusto0{
+    
+    height: 100%; 
+    z-index: 3;
+    position: absolute;
+    margin: auto;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    display: none;
+    
+}
+#imgBusto1{
+    
+    height: 100%; 
+    z-index: 3;
+    position: absolute;
+    margin: auto;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    display: none;
+    
+}
+
+#imgBusto2{
+    
+    height: 100%; 
+    z-index: 3;
+    position: absolute;
+    margin: auto;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    display: none;
+    
+}
+
 
 #imgNote{
     z-index: 4;

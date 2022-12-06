@@ -85,6 +85,12 @@ var tomaAzul = 0;
 
 function tomaPilulaAzul(altura,largura){
 
+    var busto = document.getElementById('imgBusto');
+    busto.style.display = 'none';
+
+    busto = document.getElementById('imgBusto0');
+    busto.style.display = 'block';
+
     
 
     tomaAzul = 1;
@@ -294,6 +300,23 @@ async function anima0() {
     trocador(matrix);
 
     for (var j = 0; j < numCol; j++) {
+
+
+        //MUDAR BUSTO
+        if(j%2==0){
+            busto = document.getElementById('imgBusto0');
+            busto.style.display = 'block';
+
+            busto = document.getElementById('imgBusto1');
+            busto.style.display = 'none';
+        }else{
+            busto = document.getElementById('imgBusto0');
+            busto.style.display = 'none';
+
+            busto = document.getElementById('imgBusto1');
+            busto.style.display = 'block';
+
+        }
 
         espera = await wait(1280 / (j + 2));
 
@@ -631,6 +654,16 @@ async function anima3() {
                 var recebe = document.getElementById("chuva3");
                 recebe.style.marginTop = "60%";
 
+
+                busto = document.getElementById('imgBusto2');
+                busto.style.display = 'block';
+            
+                busto = document.getElementById('imgBusto0');
+                busto.style.display = 'none';
+
+                busto = document.getElementById('imgBusto1');
+                busto.style.display = 'none';
+
                 
                 
                 
@@ -657,10 +690,6 @@ function start3() {
     tempAnima3 = setInterval(async () => await anima3(), 80);  
 }
 
-function abreLink(){
-	window.location.href ='http://localhost:5500/SavannaPassarela.html';  
-    //window.location.href ='http://www.aly-137.com/SavannaPassarela.html';  
-}
 
 function verifica(){
 
