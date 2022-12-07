@@ -655,7 +655,7 @@ async function anima3() {
                 recebe.style.marginTop = "60%";
 
 
-                busto = document.getElementById('imgBusto2');
+                busto = document.getElementById('imgBusto');
                 busto.style.display = 'block';
             
                 busto = document.getElementById('imgBusto0');

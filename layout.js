@@ -121,7 +121,7 @@ function abas1(){
 
 
         var cardProfile = document.getElementById("cardProfile");
-        cardProfile.style.display = `block`;
+        cardProfile.style.display = `flex`;
         
         contA1 = 1;
         contA2 = 0;

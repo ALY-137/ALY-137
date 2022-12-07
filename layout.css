@@ -197,18 +197,7 @@
     
 }
 
-#imgBusto2{
-    
-    height: 100%; 
-    z-index: 3;
-    position: absolute;
-    margin: auto;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-    display: none;
-    
-}
+
 
 
 #imgNote{
