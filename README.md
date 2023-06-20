@@ -1,49 +1,70 @@
-<p align="center"><img src="https://user-images.githubusercontent.com/57689838/182152533-a8c39135-d818-46c0-9e45-099f6baa092c.gif" ></p>
-</br>
-<p align="center">▚</p>
-</br>
-<p align="center">┌──────  𝙿𝙴𝚁𝙵𝙸𝙻  ──────┐</p>
+# Getting Started with Create React App
 
-<p align="center">Front End Developer ║ Web Designer</p>
-<p align="center">savannapassarela@gmail.com</p>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<p align="center">└──────────────────┘</p>
-</br>
-<p align="center">▞</p>
-</br>
+## Available Scripts
 
-<p align="center">┌──────  𝙻𝙸𝙽𝙶𝚄𝙰𝙶𝙴𝙽𝚂  ──────┐</p>
+In the project directory, you can run:
 
- 
-JAVASCRIPT | C | HTML |CSS | VISUAL BASIC | JAVA
-:---------: | :------: | :-------:| :-------:|:-------:| :-------:|
-▓▓▓▓▓▓▓▓▓ 95%| ▓▓▓▓▓▓▓▓ 85% | ▓▓▓▓▓▓▓▓▓ 95% | ▓▓▓▓▓▓▓▓▓ 95% | ▓▓▓▓▓▓ 60% | ▓▓▓▓▓▓ 50%
+### `npm start`
 
-<p align="center">└───────────────────┘</p>
-</br>
-<p align="center">▚</p>
-</br>
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-<p align="center">┌──────  𝙵𝙴𝚁𝚁𝙰𝙼𝙴𝙽𝚃𝙰𝚂  ──────┐</p>
+### `npm test`
 
- 
-VS CODE | PHOTOSHOP | ILLUSTRATOR |INDESIGN | GITHUB |
-:---------: | :------: | :-------:| :-------:|:-------:|
-▓▓▓▓▓▓▓▓▓ 95%| ▓▓▓▓▓▓▓▓▓ 95% | ▓▓▓▓▓▓▓▓▓ 95% | ▓▓▓▓▓▓▓▓ 80% | ▓▓▓▓▓▓▓▓ 80% |
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-<p align="center">└───────────────────┘</p>
-</br>
-<p align="center">▞</p>
-</br>
+### `npm run build`
 
-<p align="center">┌──────  𝙱𝙸𝙾𝙶𝚁𝙰𝙵𝙸𝙰  ──────┐</p>
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-<p align="center">Desde a infância, já era notável o meu fascínio por computadores, tudo o que queria saber, é o que ocorria desde o apertar no botão de ligar até o "mover" dos pixels no monitor. Aos 12 anos, meu hobby era hackiar os perfis no <i>orkut</i> de minhas primas e gerar boletos com informações falsas para induzir minha mãe a pagar por eles, tudo isso em prol a produção de minha fazenda que até então online. Na adolescência, já tinha a certeza de que queria ser Web Designer, porque possuía um <i>Blogspot</i> com domínio personalizado e o poder divino de substituir cores no HTML. E foi com todos esses meus talentos, que fui parar em uma magnífica empresa desenvolvedora de sistemas imobiliários, onde minha colaboração foi de grande importância fazendo ligações e cafés... Muitos, muitos cafés. Mas como eu achava super chato ter de fazer tantas ligações, acidentalmente criei um sistema de agendamento de chamadas automáticas a clientes usando um programa chamado <i>Visual Basic</i>.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-<p align="center">Quando acabei o ensino médio, queria fazer faculdade de <i>Design Gráfico</i>, mas acabei entrando em <i>Sistemas para Internet</i> pois obtive uma boa nota em Ciências Exatas. Entrei na faculdade com muita insegurança. Em todas as aulas de fundamentos matemáticos, números em minha mente diziam que nunca poderia ser profissional em programação, e quando dormia, eles ainda estavam lá. Mas o tempo foi passando, e o conteúdo foi se aprofundando e então mergulhei junto. Quase me afoguei. Sim, foi difícil, mas só até eu perceber que lá embaixo era meu lugar. E então o meu corpo começou entrar em estado de metamorfose, eu estava sentindo coisas estranhas, já não era eu mais a mesma pessoa, até nos abraços de comemoração de final de ano haviam operadores lógicos. E então comecei a entender tudo. Entendi que sempre programei, que <i>Visual Basic</i> é uma linguagem de programação também. E tá tudo bem.</p>
-</br>
-<p align="center">"<i>A vida, ás vezes, pode te forçar a programar um Call Center."</i></p>
-<p align="center">SAVANNA PASSARELA</p>
-<p align="center">└────────────────────┘</p>
-<p align="center">▚</p>
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
