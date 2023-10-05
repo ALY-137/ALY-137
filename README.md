@@ -5,7 +5,7 @@
 <p align="center">┌──────  𝙿𝙴𝚁𝙵𝙸𝙻  ──────┐</p>
 
 <p align="center">Front End Developer ║ Web Designer</p>
-<p align="center">savannapassarela@gmail.com</p>
+
 
 <p align="center">└──────────────────┘</p>
 </br>
@@ -45,6 +45,6 @@ VS CODE | PHOTOSHOP | ILLUSTRATOR |INDESIGN | GITHUB |
 </br>
 
 
-<p align="center">SAVANNA PASSARELA</p>
+<p align="center">SAVANNA OLIVEIRA</p>
 <p align="center">└────────────────────┘</p>
 <p align="center">▚</p>
