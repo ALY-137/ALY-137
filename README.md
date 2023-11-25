@@ -4,7 +4,7 @@
 </br>
 <p align="center">┌──────  𝙿𝙴𝚁𝙵𝙸𝙻  ──────┐</p>
 
-<p align="center">Front End Developer ║ Web Designer</p>
+<p align="center">Front End Developer ║ UI Designer</p>
 
 
 <p align="center">└──────────────────┘</p>
@@ -41,7 +41,9 @@ VS CODE | PHOTOSHOP | ILLUSTRATOR |INDESIGN | GITHUB |
 
 
 
-<p align="center"> Profissional apaixonada e versátil, combinando habilidades em desenvolvimento web e design. Seu fascínio precoce por tecnologia a levou a criar um sistema inovador antes mesmo de ingressar na academia, demonstrando sua capacidade de solucionar problemas. Determinada em exercer suas paixões, se destaca unindo a programação com a estética visual. Com dedicação contínua ao aprendizado, ela busca empregar seu talento combinado em projetos impactantes e significativos no ciberespaço.</p>
+<p align="center"> PROFISSIONAL APAIXONADA E VERSÁTIL. SEU FASCÍNIO PRECOCE POR TECNOLOGIA A LEVOU A CRIAR SEU PRIMEIRO SISTEMA ANTES MESMO DE INGRESSAR NA ACADEMIA. DETERMINADA EM EXERCER SUAS PAIXÕES, SE DESTACA UNINDO A PROGRAMAÇÃO COM SUA ESTÉTICA ÚNICA. COM DEDICAÇÃO CONTÍNUA AO APRENDIZADO, ELA BUSCA EMPREGAR SEUS TALENTOS EM PROJETOS IMPACTANTES E SIGNIFICATIVOS PARA O CIBERESPAÇO.
+
+</p>
 </br>
 
 
