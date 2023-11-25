@@ -4,6 +4,7 @@
 </br>
 <p align="center">┌──────  𝙿𝙴𝚁𝙵𝙸𝙻  ──────┐</p>
 
+<p align="center">SAVANNA OLIVEIRA</p>
 <p align="center">Front End Developer ║ UI Designer</p>
 
 
@@ -47,6 +48,5 @@ VS CODE | PHOTOSHOP | ILLUSTRATOR |INDESIGN | GITHUB |
 </br>
 
 
-<p align="center">SAVANNA OLIVEIRA</p>
 <p align="center">└────────────────────┘</p>
 <p align="center">▚</p>
