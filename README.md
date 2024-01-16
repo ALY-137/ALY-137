@@ -1,6 +1,9 @@
 <p align="center"><img src="https://github.com/ALY-137/ALY-137/assets/57689838/79010e99-2678-4ff8-a661-8c252caafcac" ></p>
 </br>
 
+<p align="center">▞▞▞▞ ❖ ▚▚▚▚</p>
+
+
 </br>
 <p align="center">┌──────  𝙿𝙴𝚁𝙵𝙸𝙻  ──────┐</p>
 
@@ -53,7 +56,7 @@ VS CODE | PHOTOSHOP | ILLUSTRATOR |INDESIGN | GITHUB |
 
 <p align="center">└───────────────────┘</p>
 </br>
-<p align="center">▚</p>
+<p align="center">▚▚▚▚ ❖ ▞▞▞▞</p>
 </br>
 
 
