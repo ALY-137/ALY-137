@@ -20,7 +20,7 @@
 
 </br>
 
-<p align="center"> 𝙿𝚁𝙾𝙵𝙸𝚂𝚂𝙸𝙾𝙽𝙰𝙻 𝙰𝙿𝙰𝙸𝚇𝙾𝙽𝙰𝙳𝙰 𝙴 𝚅𝙴𝚁𝚂𝙰́𝚃𝙸𝙻. 𝚂𝙴𝚄 𝙵𝙰𝚂𝙲𝙸́𝙽𝙸𝙾 𝙿𝚁𝙴𝙲𝙾𝙲𝙴 𝙿𝙾𝚁 𝚃𝙴𝙲𝙽𝙾𝙻𝙾𝙶𝙸𝙰 𝙰 𝙻𝙴𝚅𝙾𝚄 𝙰 𝙲𝚁𝙸𝙰𝚁 𝚂𝙴𝚄 𝙿𝚁𝙸𝙼𝙴𝙸𝚁𝙾 𝚂𝙸𝚂𝚃𝙴𝙼𝙰 𝙰𝙽𝚃𝙴𝚂 𝙼𝙴𝚂𝙼𝙾 𝙳𝙴 𝙸𝙽𝙶𝚁𝙴𝚂𝚂𝙰𝚁 𝙽𝙰 𝙰𝙲𝙰𝙳𝙴𝙼𝙸𝙰. 𝙳𝙴𝚃𝙴𝚁𝙼𝙸𝙽𝙰𝙳𝙰 𝙴𝙼 𝙴𝚇𝙴𝚁𝙲𝙴𝚁 𝚂𝚄𝙰𝚂 𝙿𝙰𝙸𝚇𝙾̃𝙴𝚂, 𝚂𝙴 𝙳𝙴𝚂𝚃𝙰𝙲𝙰 𝚄𝙽𝙸𝙽𝙳𝙾 𝙰 𝙿𝚁𝙾𝙶𝚁𝙰𝙼𝙰𝙲̧𝙰̃𝙾 𝙲𝙾𝙼 𝚂𝚄𝙰 𝙴𝚂𝚃𝙴́𝚃𝙸𝙲𝙰 𝚄́𝙽𝙸𝙲𝙰. 𝙲𝙾𝙼 𝙳𝙴𝙳𝙸𝙲𝙰𝙲̧𝙰̃𝙾 𝙲𝙾𝙽𝚃𝙸́𝙽𝚄𝙰 𝙰𝙾 𝙰𝙿𝚁𝙴𝙽𝙳𝙸𝚉𝙰𝙳𝙾, 𝙴𝙻𝙰 𝙱𝚄𝚂𝙲𝙰 𝙴𝙼𝙿𝚁𝙴𝙶𝙰𝚁 𝚂𝙴𝚄𝚂 𝚃𝙰𝙻𝙴𝙽𝚃𝙾𝚂 𝙴𝙼 𝙿𝚁𝙾𝙹𝙴𝚃𝙾𝚂 𝙸𝙼𝙿𝙰𝙲𝚃𝙰𝙽𝚃𝙴𝚂 𝙴 𝚂𝙸𝙶𝙽𝙸𝙵𝙸𝙲𝙰𝚃𝙸𝚅𝙾𝚂 𝙿𝙰𝚁𝙰 𝙾 𝙲𝙸𝙱𝙴𝚁𝙴𝚂𝙿𝙰𝙲̧𝙾.
+<p align="center"> PROFISSIONAL APAIXONADA E VERSÁTIL. SEU FASCÍNIO PRECOCE POR TECNOLOGIA A LEVOU A CRIAR SEU PRIMEIRO SISTEMA ANTES MESMO DE INGRESSAR NA ACADEMIA. DETERMINADA EM EXERCER SUAS PAIXÕES, SE DESTACA UNINDO A PROGRAMAÇÃO COM SUA ESTÉTICA ÚNICA. COM DEDICAÇÃO CONTÍNUA AO APRENDIZADO, ELA BUSCA EMPREGAR SEUS TALENTOS EM PROJETOS IMPACTANTES E SIGNIFICATIVOS DENTRO DO CIBERESPAÇO.
 
 </p>
 </br>
