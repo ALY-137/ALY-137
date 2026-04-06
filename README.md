@@ -5,7 +5,7 @@
 
 
 </br>
-<p align="center">──────  𝙿𝙴𝚁𝙵𝙸𝙻  ──────</p>
+<p align="center">──────  𝙷𝙴𝙻𝙻𝙾 𝚆𝙾𝚁𝙻𝙳  ──────</p>
 
 <p align="center">𝚂𝙰𝚅𝙰𝙽𝙽𝙰 𝙾𝙻𝙸𝚅𝙴𝙸𝚁𝙰</p>
 <p align="center">𝙵𝚛𝚘𝚗𝚝 𝙴𝚗𝚍 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛 ║ 𝚄𝙸 𝙳𝚎𝚜𝚒𝚐𝚗𝚎𝚛</p>
@@ -16,7 +16,7 @@
 <p align="center">▞</p>
 </br>
 
-<p align="center">──────  𝙱𝙸𝙾𝙶𝚁𝙰𝙵𝙸𝙰  ──────</p>
+<p align="center">──────  𝙱𝙸𝙾  ──────</p>
 
 </br>
 
